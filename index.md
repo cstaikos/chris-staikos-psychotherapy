@@ -4,16 +4,13 @@ layout: default
 title: Home
 ---
 
-# Welcome
+# Welcome - Under Construction
 
-I offer psychotherapy services in Ontario.
 
-[Book a consultation](mailto:you@example.com)
 
-## Services
-- Anxiety therapy
-- Depression
-- Trauma
+<!-- [Book a consultation](mailto:you@example.com) -->
 
-## About
-Learn more [here](/about)
+## Website coming soon
+
+<!-- ## About -->
+<!-- Learn more [here](/about) -->
