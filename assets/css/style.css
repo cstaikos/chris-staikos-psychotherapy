@@ -103,6 +103,7 @@ a {
 }
 
 .hero,
+.construction,
 .page-intro,
 .section-block,
 .card,
@@ -119,6 +120,21 @@ a {
   background: var(--surface);
   border-radius: calc(var(--radius) + 8px);
   padding: 2rem;
+}
+
+.construction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 15rem);
+  text-align: center;
+  background: var(--surface);
+  border-radius: calc(var(--radius) + 8px);
+  padding: 2rem;
+}
+
+.construction-copy {
+  max-width: 42rem;
 }
 
 .hero-copy h1,
@@ -257,6 +273,11 @@ a {
 
   .hero {
     padding: 1.25rem;
+  }
+
+  .construction {
+    min-height: calc(100vh - 12rem);
+    padding: 1.5rem;
   }
 
   .hero-copy h1,
