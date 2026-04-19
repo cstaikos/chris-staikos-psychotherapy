@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ site.description }}" />
-    {% if page.noindex %}
-    <meta name="robots" content="noindex, nofollow, noarchive" />
-    {% endif %}
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
@@ -15,15 +12,6 @@
       <header class="site-header">
         <div class="container header-inner">
           <a class="site-brand" href="/">Chris Staikos</a>
-          {% unless page.hide_nav %}
-          <nav class="site-nav" aria-label="Main navigation">
-            <a href="/">Home</a>
-            <a href="/psychotherapy/">Psychotherapy</a>
-            <a href="/breathwork/">Breathwork</a>
-            <a href="/contact/">Contact</a>
-            <a class="nav-cta" href="/booking/">Booking</a>
-          </nav>
-          {% endunless %}
         </div>
       </header>
 

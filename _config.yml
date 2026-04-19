@@ -4,8 +4,3 @@ description: "Psychotherapy and breathwork with a calm, grounded approach."
 baseurl: ""
 url: ""
 markdown: kramdown
-defaults:
-  - scope:
-      path: ""
-    values:
-      noindex: true
