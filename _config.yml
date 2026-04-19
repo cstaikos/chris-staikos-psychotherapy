@@ -1,6 +1,6 @@
 
-title: "Chris Staikos, Psychotherapist"
-description: "Therapy services in Ontario"
+title: "Chris Staikos Psychotherapy"
+description: "Psychotherapy and breathwork with a calm, grounded approach."
 baseurl: ""
 url: ""
-theme: minima
+markdown: kramdown
