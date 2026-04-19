@@ -13,7 +13,6 @@ permalink: /booking/
 <section class="section-block">
   <div class="booking-panel">
     <h2>Next step</h2>
-    <p>Add your preferred booking tool here, such as Jane, Calendly, or a direct contact form.</p>
-    <a class="button button-primary" href="mailto:hello@example.com?subject=Consultation%20Request">Request a Consultation</a>
+    <a class="button button-primary" href="https://aws-portal.owlpractice.ca/chris-staikos-psychotherapy/booking?therapist_id=1">Booking</a>
   </div>
 </section>
