@@ -123,18 +123,29 @@ a {
 }
 
 .construction {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
   align-items: center;
-  justify-content: center;
   min-height: calc(100vh - 15rem);
-  text-align: center;
   background: var(--surface);
   border-radius: calc(var(--radius) + 8px);
   padding: 2rem;
+  gap: 2rem;
 }
 
 .construction-copy {
   max-width: 42rem;
+}
+
+.construction-image-wrap {
+  justify-self: center;
+}
+
+.construction-image {
+  width: min(100%, 360px);
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 28px;
 }
 
 .hero-copy h1,
@@ -276,8 +287,14 @@ a {
   }
 
   .construction {
+    grid-template-columns: 1fr;
     min-height: calc(100vh - 12rem);
     padding: 1.5rem;
+    text-align: center;
+  }
+
+  .construction-copy {
+    max-width: none;
   }
 
   .hero-copy h1,
