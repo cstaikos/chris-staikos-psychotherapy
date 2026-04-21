@@ -5,9 +5,8 @@ title: Home
 
 <section class="hero">
   <div class="hero-copy">
-    <!-- <p class="eyebrow">Chris Staikos Psychotherapy</p> -->
     <h1>Chris Staikos Psychotherapy</h1>
-    <p class="lead">Therapy shaped by present-moment awareness, compassionate connection, and a belief that meaningful change can emerge through what we feel and discover in the body.</p>
+    <p class="lead">I am a Registered Psychotherapist (Qualifying), and offer psychotherapy informed by present-moment awareness, compassionate connection, and a belief that meaningful change can emerge through what we feel and discover in the body.</p>
     <div class="hero-actions">
       <a class="button button-primary" href="https://aws-portal.owlpractice.ca/chris-staikos-psychotherapy/booking?therapist_id=1">Book a Consultation</a>
       <a class="button button-secondary" href="{{ '/about/' | relative_url }}">Learn More</a>
