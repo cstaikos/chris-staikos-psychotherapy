@@ -4,9 +4,15 @@ title: Psychotherapy
 permalink: /psychotherapy/
 ---
 
-<section class="page-intro">
-  <p class="eyebrow">Psychotherapy</p>
-  <h1>Remote therapy for individuals and couples</h1>
+<section class="hero hero-alt">
+  <div class="hero-copy">
+    <p class="eyebrow">Psychotherapy</p>
+    <h1>Remote therapy for individuals and couples</h1>
+    <p class="lead">Sessions are offered remotely via Zoom and held in a collaborative, grounded way that leaves room for reflection, emotional processing, and meaningful change.</p>
+  </div>
+  <div class="hero-image-wrap">
+    <img class="hero-image therapy-image" src="{{ '/assets/images/therapy.png' | relative_url }}" alt="Abstract psychotherapy artwork" />
+  </div>
 </section>
 
 <section class="section-grid section-grid-two">

@@ -231,6 +231,12 @@ a {
   max-height: 520px;
 }
 
+.therapy-image {
+  width: min(100%, 460px);
+  aspect-ratio: auto;
+  max-height: 520px;
+}
+
 .section-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
