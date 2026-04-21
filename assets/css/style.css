@@ -158,6 +158,10 @@ a {
   padding: 2rem;
 }
 
+.hero-alt {
+  align-items: stretch;
+}
+
 .hero-copy h1,
 .page-intro h1,
 .section-block h2 {
@@ -219,6 +223,12 @@ a {
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: 28px;
+}
+
+.breathwork-image {
+  width: min(100%, 460px);
+  aspect-ratio: auto;
+  max-height: 520px;
 }
 
 .section-grid {

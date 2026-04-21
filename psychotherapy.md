@@ -6,8 +6,7 @@ permalink: /psychotherapy/
 
 <section class="page-intro">
   <p class="eyebrow">Psychotherapy</p>
-  <h1>Remote therapy for individuals and couples.</h1>
-  <p class="lead">Sessions are collaborative, grounded, and paced in a way that leaves room for reflection, emotional processing, and sustainable change.</p>
+  <h1>Remote therapy for individuals and couples</h1>
 </section>
 
 <section class="section-grid section-grid-two">
@@ -21,14 +20,6 @@ permalink: /psychotherapy/
   </article>
 </section>
 
-<!-- <section class="section-block"> -->
   <div class="button-row">
-    <a class="button button-primary" href="https://aws-portal.owlpractice.ca/chris-staikos-psychotherapy/booking?therapist_id=1">Book a Consultation</a>
+    <a class="button button-primary" href="https://aws-portal.owlpractice.ca/chris-staikos-psychotherapy/booking?therapist_id=1">Book a Free Consultation</a>
   </div>
-<!-- </section> -->
-
-<!-- <section class="section-block">
-  <p class="section-label">Low-Cost Therapy</p>
-  <h2>Short-term lower-cost support.</h2>
-  <p>I offer low-cost therapy options for $65 per session. This is a short-term model and runs for 6 sessions before the spot is made available for others in need. Please reach out if this option would make therapy more accessible for you.</p>
-</section> -->

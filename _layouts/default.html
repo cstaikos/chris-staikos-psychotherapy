@@ -56,7 +56,10 @@
         if (!user || !domain) return;
 
         var email = user + "@" + domain;
-        var container = trigger.closest(".section-block");
+        var container =
+          trigger.closest(".section-block") ||
+          trigger.closest(".page-intro") ||
+          trigger.parentElement;
         var output = container ? container.querySelector(".email-output") : null;
         if (output) {
           output.innerHTML = '<a class="text-link" href="mailto:' + email + '">' + email + "</a>";
