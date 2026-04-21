@@ -5,13 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ site.description }}" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}" />
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="710c89a6-45d1-4285-8bc1-20419242d57d"></script>
   </head>
   <body>
     <div class="site-shell">
+      <div class="site-art site-art-top" aria-hidden="true">
+        <svg viewBox="0 0 360 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 145C62 56 165 30 214 95C250 143 220 215 284 225C311 230 334 214 346 190" />
+          <path d="M18 184C64 123 136 104 183 137C228 168 258 172 309 140C328 128 340 114 347 96" />
+          <path d="M113 21C153 60 149 124 114 154C84 179 71 212 93 240" />
+        </svg>
+      </div>
+      <div class="site-art site-art-bottom" aria-hidden="true">
+        <svg viewBox="0 0 360 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 164C77 208 153 199 198 151C244 101 287 90 341 126" />
+          <path d="M39 214C105 246 179 232 227 183C279 130 305 71 281 23" />
+          <path d="M126 32C154 68 158 111 133 145C108 178 101 214 129 240" />
+        </svg>
+      </div>
       <header class="site-header">
         <div class="container header-inner">
-          <a class="site-brand" href="/">Chris Staikos</a>
+          <a class="site-brand" href="{{ '/' | relative_url }}">Chris Staikos</a>
+          <nav class="site-nav" aria-label="Main navigation">
+            <a href="{{ '/about/' | relative_url }}">About</a>
+            <a href="{{ '/psychotherapy/' | relative_url }}">Psychotherapy</a>
+            <a href="{{ '/breathwork/' | relative_url }}">Breathwork</a>
+            <a href="{{ '/contact/' | relative_url }}">Contact</a>
+            <a class="nav-cta" href="https://aws-portal.owlpractice.ca/chris-staikos-psychotherapy/booking?therapist_id=1">Booking</a>
+          </nav>
         </div>
       </header>
 
@@ -22,9 +44,29 @@
       <footer class="site-footer">
         <div class="container footer-inner">
           <p>{{ site.title }}</p>
-          <p>Psychotherapy and breathwork</p>
         </div>
       </footer>
     </div>
+    <script>
+      document.addEventListener("click", function (event) {
+        var trigger = event.target.closest(".js-email-reveal");
+        if (!trigger) return;
+
+        var user = trigger.getAttribute("data-user");
+        var domain = trigger.getAttribute("data-domain");
+        if (!user || !domain) return;
+
+        var email = user + "@" + domain;
+        var container =
+          trigger.closest(".section-block") ||
+          trigger.closest(".page-intro") ||
+          trigger.parentElement;
+        var output = container ? container.querySelector(".email-output") : null;
+        if (output) {
+          output.innerHTML = '<a class="text-link" href="mailto:' + email + '">' + email + "</a>";
+        }
+        trigger.textContent = "Email Revealed";
+      });
+    </script>
   </body>
 </html>

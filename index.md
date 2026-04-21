@@ -3,16 +3,35 @@ layout: default
 title: Home
 ---
 
-<section class="construction">
-  <div class="construction-copy">
-    <p class="eyebrow">Chris Staikos Psychotherapy</p>
-    <h1>Website under construction.</h1>
-    <p class="lead">A full site is currently in development. If you would like to connect in the meantime, you can use the booking link below.</p>
+<section class="hero">
+  <div class="hero-copy">
+    <!-- <p class="eyebrow">Chris Staikos Psychotherapy</p> -->
+    <h1>Chris Staikos Psychotherapy</h1>
+    <p class="lead">Therapy shaped by present-moment awareness, compassionate connection, and a belief that meaningful change can emerge through what we feel and discover in the body.</p>
     <div class="hero-actions">
-      <a class="button button-primary" href="https://aws-portal.owlpractice.ca/chris-staikos-psychotherapy/booking?therapist_id=1">Booking</a>
+      <a class="button button-primary" href="https://aws-portal.owlpractice.ca/chris-staikos-psychotherapy/booking?therapist_id=1">Book a Consultation</a>
+      <a class="button button-secondary" href="{{ '/about/' | relative_url }}">Learn More</a>
     </div>
   </div>
-  <div class="construction-image-wrap">
-    <img class="construction-image" src="/assets/images/headshot-chris.png" alt="Headshot of Chris Staikos" />
+  <div class="hero-image-wrap">
+    <img class="hero-image" src="{{ '/assets/images/headshot-chris.png' | relative_url }}" alt="Headshot of Chris Staikos" />
   </div>
+</section>
+
+<section class="section-grid">
+  <article class="card">
+    <h2>About</h2>
+    <p>Learn more about my background, therapeutic orientation, focus areas, and training.</p>
+    <a class="text-link" href="{{ '/about/' | relative_url }}">Read more</a>
+  </article>
+  <article class="card">
+    <h2>Psychotherapy</h2>
+    <p>Remote individual and couples sessions, fees, availability, consultations, and low-cost options.</p>
+    <a class="text-link" href="{{ '/psychotherapy/' | relative_url }}">Explore psychotherapy</a>
+  </article>
+  <article class="card">
+    <h2>Breathwork</h2>
+    <p>How conscious connected breathwork may be integrated into the therapeutic relationship.</p>
+    <a class="text-link" href="{{ '/breathwork/' | relative_url }}">Explore breathwork</a>
+  </article>
 </section>
