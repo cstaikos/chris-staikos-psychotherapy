@@ -1,12 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.lang | default: 'en' }}">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-    <meta name="description" content="{{ site.description }}" />
+    {% assign page_title = page.seo_title | default: page.title | append: ' | ' | append: site.title %}
+    {% if page.title == 'Home' and page.seo_title == nil %}
+      {% assign page_title = site.title %}
+    {% endif %}
+    {% assign page_description = page.description | default: site.description %}
+    {% assign canonical_url = page.url | absolute_url %}
+    {% assign og_image = page.og_image | default: site.social_image | absolute_url %}
+    <title>{{ page_title }}</title>
+    <meta name="description" content="{{ page_description }}" />
+    <link rel="canonical" href="{{ canonical_url }}" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ page_title }}" />
+    <meta property="og:description" content="{{ page_description }}" />
+    <meta property="og:url" content="{{ canonical_url }}" />
+    <meta property="og:image" content="{{ og_image }}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ page_title }}" />
+    <meta name="twitter:description" content="{{ page_description }}" />
+    <meta name="twitter:image" content="{{ og_image }}" />
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}" />
     <script defer src="https://cloud.umami.is/script.js" data-website-id="710c89a6-45d1-4285-8bc1-20419242d57d"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Chris Staikos",
+        "jobTitle": "Registered Psychotherapist (Qualifying)",
+        "url": "{{ site.url }}",
+        "image": "{{ site.social_image | absolute_url }}",
+        "knowsAbout": [
+          "Psychotherapy",
+          "Breathwork",
+          "Anxiety",
+          "Depression",
+          "Dissociation",
+          "Mindfulness-based psychotherapy",
+          "Internal Family Systems",
+          "Emotion Focused Therapy"
+        ],
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Queen's University"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Wilfrid Laurier University"
+          }
+        ],
+        "sameAs": [
+          "{{ site.url }}"
+        ]
+      }
+    </script>
   </head>
   <body>
     <div class="site-shell">

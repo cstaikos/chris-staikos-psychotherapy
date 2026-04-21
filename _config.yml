@@ -2,5 +2,8 @@
 title: "Chris Staikos Psychotherapy"
 description: "Psychotherapy services for individuals and couples."
 baseurl: ""
-url: ""
+url: "https://chrisstaikos.com"
 markdown: kramdown
+lang: "en-CA"
+timezone: "America/Toronto"
+social_image: "/assets/images/headshot-chris.png"

@@ -2,6 +2,8 @@
 layout: default
 title: Booking
 permalink: /booking/
+description: "Book a free 20-minute consultation with Chris Staikos through the Owl Practice client portal."
+seo_title: "Booking | Chris Staikos Psychotherapy"
 ---
 
 <section class="page-intro">

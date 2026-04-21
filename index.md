@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Home
+description: "Chris Staikos offers online psychotherapy for individuals and couples, with a grounded, body-aware approach and free 20-minute consultations."
+seo_title: "Chris Staikos Psychotherapy | Online Therapy for Individuals and Couples"
 ---
 
 <section class="hero">

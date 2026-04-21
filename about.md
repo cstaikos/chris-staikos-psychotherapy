@@ -2,6 +2,8 @@
 layout: default
 title: About
 permalink: /about/
+description: "Learn about Chris Staikos, a Registered Psychotherapist (Qualifying) offering psychotherapy informed by mindfulness, EFT, IFS, and somatic processing."
+seo_title: "About Chris Staikos | Registered Psychotherapist (Qualifying)"
 ---
 
 <section class="hero hero-alt">
