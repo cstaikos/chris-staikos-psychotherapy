@@ -15,9 +15,12 @@ image_height: 1742
 <section class="hero">
   <div class="hero-copy">
     <h1>Chris Staikos Psychotherapy</h1>
-    <p class="lead">Online psychotherapy for individuals and couples, informed by present-moment awareness, compassionate connection, and a belief that meaningful change can emerge through what we feel and discover in the body.</p>
+    <p class="lead">I offer remote psychotherapy for individuals and couples. My approach is grounded in present-moment awareness and compassionate connection.
+
+    Finding the right therapist is important and can be tricky. Have a look around to learn more about me and my approach, or book a free consultation to see if we are a good fit! </p>
+
     <div class="hero-actions">
-      <a class="button button-primary" href="{{ '/booking/' | relative_url }}">Book a Consultation</a>
+      <a class="button button-primary" href="{{ '/booking/' | relative_url }}">Book a Free Consultation</a>
       <a class="button button-secondary" href="{{ '/about/' | relative_url }}">Learn More</a>
     </div>
   </div>

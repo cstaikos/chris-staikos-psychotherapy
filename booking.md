@@ -11,7 +11,7 @@ priority: 0.8
 
 <section class="page-intro">
   <p class="eyebrow">Booking</p>
-  <h1>Book a free 20-minute therapy consultation</h1>
+  <h1>Book a free 20-minute consultation</h1>
   <p class="lead">Use the client portal to schedule an initial consultation for online psychotherapy or breathwork-informed care.</p>
 </section>
 

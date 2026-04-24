@@ -48,7 +48,7 @@ image_height: 1742
   <article class="card">
     <h2>Additional Training</h2>
     <ul class="clean-list">
-      <li>2-Day Breathwork Facilitation Training - Outside the Box Education and Psychotherapy (2026)</li>
+      <li>Breathwork Facilitation Training - Outside the Box Education and Psychotherapy (2026)</li>
       <li>Fundamentals of Sitting for Psychedelic Assisted Psychotherapy &amp; Breathwork - Outside the Box Education and Psychotherapy (2024)</li>
     </ul>
   </article>

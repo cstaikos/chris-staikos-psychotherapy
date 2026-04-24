@@ -40,7 +40,7 @@ image_height: 1652
   </article>
   <article class="card">
     <h2>Low-Cost Therapy</h2>
-    <p>Low-cost therapy is offered as a means of making psychotherapy more accessible. Chris Staikos Psychotherapy offers low-cost therapy at a significantly reduced fee ($65 for individuals and $85 for couples). In order to make low-cost therapy as accessible as possible, sessions at this rate are offered within a short-term model of 6 sessions. After the sixth session, there is an option to continue in a sliding scale spot (if available) or at the full fee. If these options are not feasible, our therapeutic relationship will come to a close after the sixth session.</p>
+    <p>Low-cost therapy is offered as a means of making psychotherapy more accessible. I offer low-cost therapy at a significantly reduced fee ($65 for individuals and $85 for couples). In order to make low-cost therapy as accessible as possible, sessions at this rate are offered within a short-term model of 6 sessions. After the sixth session, there is an option to continue in a sliding scale spot (if available) or at the full fee. If these options are not feasible, our therapeutic relationship will come to a close after the sixth session.</p>
   </article>
 </section>
 
