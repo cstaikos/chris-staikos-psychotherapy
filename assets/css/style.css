@@ -242,9 +242,15 @@ a {
 
 .hero-image {
   width: min(100%, 420px);
+  height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: 28px;
+}
+
+.headshot-image {
+  aspect-ratio: auto;
+  object-fit: contain;
 }
 
 .breathwork-image {

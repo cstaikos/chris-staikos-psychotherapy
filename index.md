@@ -24,7 +24,7 @@ image_height: 1742
   <div class="hero-image-wrap">
     <picture>
       <source type="image/webp" srcset="{{ '/assets/images/headshot-chris-420.webp' | relative_url }} 420w, {{ '/assets/images/headshot-chris-840.webp' | relative_url }} 840w" sizes="(max-width: 820px) 100vw, 420px" />
-      <img class="hero-image" src="{{ '/assets/images/headshot-chris.png' | relative_url }}" width="1360" height="1742" alt="Headshot of Chris Staikos" decoding="async" fetchpriority="high" />
+      <img class="hero-image headshot-image" src="{{ '/assets/images/headshot-chris.png' | relative_url }}" width="1360" height="1742" alt="Headshot of Chris Staikos" decoding="async" fetchpriority="high" />
     </picture>
   </div>
 </section>
