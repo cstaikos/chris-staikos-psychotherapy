@@ -1,30 +1,16 @@
 ---
 layout: none
+sitemap: false
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% assign sitemap_pages = site.html_pages | where_exp: "item", "item.sitemap != false" | sort: "url" %}
+  {% for item in sitemap_pages %}
   <url>
-    <loc>{{ '/' | absolute_url }}</loc>
-    <lastmod>2026-04-21</lastmod>
+    <loc>{{ item.url | absolute_url }}</loc>
+    <lastmod>{{ item.last_modified_at | default: site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>{{ item.changefreq | default: "monthly" }}</changefreq>
+    <priority>{{ item.priority | default: 0.6 }}</priority>
   </url>
-  <url>
-    <loc>{{ '/about/' | absolute_url }}</loc>
-    <lastmod>2026-04-21</lastmod>
-  </url>
-  <url>
-    <loc>{{ '/psychotherapy/' | absolute_url }}</loc>
-    <lastmod>2026-04-21</lastmod>
-  </url>
-  <url>
-    <loc>{{ '/breathwork/' | absolute_url }}</loc>
-    <lastmod>2026-04-21</lastmod>
-  </url>
-  <url>
-    <loc>{{ '/contact/' | absolute_url }}</loc>
-    <lastmod>2026-04-21</lastmod>
-  </url>
-  <url>
-    <loc>{{ '/booking/' | absolute_url }}</loc>
-    <lastmod>2026-04-21</lastmod>
-  </url>
+  {% endfor %}
 </urlset>

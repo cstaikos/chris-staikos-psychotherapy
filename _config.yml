@@ -1,9 +1,30 @@
 
 title: "Chris Staikos Psychotherapy"
-description: "Psychotherapy services for individuals and couples."
+description: "Online psychotherapy for individuals and couples in Ontario, with a grounded, body-aware approach and free 20-minute consultations."
 baseurl: ""
 url: "https://chrisstaikos.com"
 markdown: kramdown
 lang: "en-CA"
 timezone: "America/Toronto"
 social_image: "/assets/images/headshot-chris.png"
+social_image_alt: "Headshot of Chris Staikos"
+social_image_width: 1360
+social_image_height: 1742
+email: "chris.staikos.psychotherapy@proton.me"
+booking_url: "https://aws-portal.owlpractice.ca/chris-staikos-psychotherapy/booking?therapist_id=1"
+service_area: "Ontario, Canada"
+author:
+  name: "Chris Staikos"
+  job_title: "Registered Psychotherapist (Qualifying)"
+  url: "https://chrisstaikos.com/about/"
+knows_about:
+  - Psychotherapy
+  - Online therapy
+  - Couples therapy
+  - Breathwork
+  - Anxiety
+  - Depression
+  - Dissociation
+  - Mindfulness-based psychotherapy
+  - Internal Family Systems
+  - Emotion Focused Therapy

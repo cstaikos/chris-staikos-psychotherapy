@@ -3,64 +3,54 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {% assign page_title = page.seo_title | default: page.title | append: ' | ' | append: site.title %}
-    {% if page.title == 'Home' and page.seo_title == nil %}
+    {% if page.seo_title %}
+      {% assign page_title = page.seo_title %}
+    {% elsif page.title == 'Home' %}
       {% assign page_title = site.title %}
+    {% else %}
+      {% assign page_title = page.title | append: ' | ' | append: site.title %}
     {% endif %}
     {% assign page_description = page.description | default: site.description %}
     {% assign canonical_url = page.url | absolute_url %}
-    {% assign og_image = page.og_image | default: site.social_image | absolute_url %}
-    <title>{{ page_title }}</title>
-    <meta name="description" content="{{ page_description }}" />
+    {% assign page_image = page.image | default: site.social_image %}
+    {% assign page_image_alt = page.image_alt | default: site.social_image_alt %}
+    {% assign og_image = page.og_image | default: page_image | absolute_url %}
+    {% assign og_type = page.og_type | default: 'website' %}
+    <title>{{ page_title | escape }}</title>
+    <meta name="description" content="{{ page_description | escape }}" />
+    <meta name="author" content="{{ site.author.name | escape }}" />
+    <meta name="theme-color" content="#f4efe7" />
     <link rel="canonical" href="{{ canonical_url }}" />
+    <link rel="alternate" hreflang="{{ site.lang | default: 'en-CA' }}" href="{{ canonical_url }}" />
+    <link rel="alternate" hreflang="x-default" href="{{ canonical_url }}" />
+    <link rel="preconnect" href="https://cloud.umami.is" crossorigin />
+    <link rel="dns-prefetch" href="https://cloud.umami.is" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta property="og:site_name" content="{{ site.title }}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="{{ page_title }}" />
-    <meta property="og:description" content="{{ page_description }}" />
+    <meta property="og:locale" content="{{ site.lang | default: 'en-CA' | replace: '-', '_' }}" />
+    <meta property="og:type" content="{{ og_type }}" />
+    <meta property="og:title" content="{{ page_title | escape }}" />
+    <meta property="og:description" content="{{ page_description | escape }}" />
     <meta property="og:url" content="{{ canonical_url }}" />
     <meta property="og:image" content="{{ og_image }}" />
+    <meta property="og:image:alt" content="{{ page_image_alt | escape }}" />
+    {% if page.image_width or site.social_image_width %}
+      <meta property="og:image:width" content="{{ page.image_width | default: site.social_image_width }}" />
+    {% endif %}
+    {% if page.image_height or site.social_image_height %}
+      <meta property="og:image:height" content="{{ page.image_height | default: site.social_image_height }}" />
+    {% endif %}
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="{{ page_title }}" />
-    <meta name="twitter:description" content="{{ page_description }}" />
+    <meta name="twitter:title" content="{{ page_title | escape }}" />
+    <meta name="twitter:description" content="{{ page_description | escape }}" />
     <meta name="twitter:image" content="{{ og_image }}" />
+    <meta name="twitter:image:alt" content="{{ page_image_alt | escape }}" />
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}" />
     <script defer src="https://cloud.umami.is/script.js" data-website-id="710c89a6-45d1-4285-8bc1-20419242d57d"></script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Chris Staikos",
-        "jobTitle": "Registered Psychotherapist (Qualifying)",
-        "url": "{{ site.url }}",
-        "image": "{{ site.social_image | absolute_url }}",
-        "knowsAbout": [
-          "Psychotherapy",
-          "Breathwork",
-          "Anxiety",
-          "Depression",
-          "Dissociation",
-          "Mindfulness-based psychotherapy",
-          "Internal Family Systems",
-          "Emotion Focused Therapy"
-        ],
-        "alumniOf": [
-          {
-            "@type": "CollegeOrUniversity",
-            "name": "Queen's University"
-          },
-          {
-            "@type": "CollegeOrUniversity",
-            "name": "Wilfrid Laurier University"
-          }
-        ],
-        "sameAs": [
-          "{{ site.url }}"
-        ]
-      }
-    </script>
+    {% include structured-data.html page_title=page_title page_description=page_description canonical_url=canonical_url page_image=page_image %}
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="site-shell">
       <div class="site-art site-art-top" aria-hidden="true">
         <svg viewBox="0 0 360 260" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,22 +70,26 @@
         <div class="container header-inner">
           <a class="site-brand" href="{{ '/' | relative_url }}">Chris Staikos</a>
           <nav class="site-nav" aria-label="Main navigation">
-            <a href="{{ '/about/' | relative_url }}">About</a>
-            <a href="{{ '/psychotherapy/' | relative_url }}">Psychotherapy</a>
-            <a href="{{ '/breathwork/' | relative_url }}">Breathwork</a>
-            <a href="{{ '/contact/' | relative_url }}">Contact</a>
-            <a class="nav-cta" href="https://aws-portal.owlpractice.ca/chris-staikos-psychotherapy/booking?therapist_id=1">Booking</a>
+            <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a>
+            <a href="{{ '/psychotherapy/' | relative_url }}"{% if page.url == '/psychotherapy/' %} aria-current="page"{% endif %}>Psychotherapy</a>
+            <a href="{{ '/breathwork/' | relative_url }}"{% if page.url == '/breathwork/' %} aria-current="page"{% endif %}>Breathwork</a>
+            <a href="{{ '/contact/' | relative_url }}"{% if page.url == '/contact/' %} aria-current="page"{% endif %}>Contact</a>
+            <a class="nav-cta" href="{{ '/booking/' | relative_url }}"{% if page.url == '/booking/' %} aria-current="page"{% endif %}>Booking</a>
           </nav>
         </div>
       </header>
 
-      <main class="container site-main">
+      <main id="main-content" class="container site-main">
         {{ content }}
       </main>
 
       <footer class="site-footer">
         <div class="container footer-inner">
-          <p>{{ site.title }}</p>
+          <p>{{ site.title }}. Online psychotherapy for individuals and couples in Ontario.</p>
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="{{ '/booking/' | relative_url }}">Booking</a>
+            <a href="{{ '/contact/' | relative_url }}">Contact</a>
+          </nav>
         </div>
       </footer>
     </div>

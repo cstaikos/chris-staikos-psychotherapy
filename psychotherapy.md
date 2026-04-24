@@ -3,16 +3,29 @@ layout: default
 title: Psychotherapy
 permalink: /psychotherapy/
 description: "Online psychotherapy for individuals and couples with Chris Staikos, including fees, availability, consultations, and low-cost therapy options."
-seo_title: "Psychotherapy | Online Therapy for Individuals and Couples"
+seo_title: "Online Psychotherapy in Ontario | Individuals and Couples"
+last_modified_at: 2026-04-24
+changefreq: monthly
+priority: 0.9
+schema_service_name: "Online psychotherapy for individuals and couples"
+schema_service_type: "Psychotherapy"
+image: /assets/images/therapy.png
+image_alt: "Abstract artwork representing psychotherapy and supportive conversation"
+image_width: 2096
+image_height: 1652
 ---
 
 <section class="hero hero-alt">
   <div class="hero-copy">
     <p class="eyebrow">Psychotherapy</p>
-    <h1>Remote therapy for individuals and couples</h1>
+    <h1>Online therapy for individuals and couples in Ontario</h1>
+    <p class="lead">I offer 60-minute remote psychotherapy sessions via Zoom, with free 20-minute consultations for new clients.</p>
   </div>
   <div class="hero-image-wrap">
-    <img class="hero-image therapy-image" src="{{ '/assets/images/therapy.png' | relative_url }}" alt="Abstract psychotherapy artwork" />
+    <picture>
+      <source type="image/webp" srcset="{{ '/assets/images/therapy-460.webp' | relative_url }} 460w, {{ '/assets/images/therapy-920.webp' | relative_url }} 920w" sizes="(max-width: 820px) 100vw, 460px" />
+      <img class="hero-image therapy-image" src="{{ '/assets/images/therapy.png' | relative_url }}" width="2096" height="1652" alt="Abstract artwork representing psychotherapy and supportive conversation" decoding="async" fetchpriority="high" />
+    </picture>
   </div>
 </section>
 
@@ -32,5 +45,5 @@ seo_title: "Psychotherapy | Online Therapy for Individuals and Couples"
 </section>
 
   <div class="button-row">
-    <a class="button button-primary" href="https://aws-portal.owlpractice.ca/chris-staikos-psychotherapy/booking?therapist_id=1">Book a Free Consultation</a>
+    <a class="button button-primary" href="{{ '/booking/' | relative_url }}">Book a Free Consultation</a>
   </div>

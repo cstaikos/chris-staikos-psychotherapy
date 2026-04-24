@@ -4,6 +4,14 @@ title: About
 permalink: /about/
 description: "Learn about Chris Staikos, a Registered Psychotherapist (Qualifying) offering psychotherapy informed by mindfulness, EFT, IFS, and somatic processing."
 seo_title: "About Chris Staikos | Registered Psychotherapist (Qualifying)"
+last_modified_at: 2026-04-24
+changefreq: monthly
+priority: 0.7
+schema_type: AboutPage
+image: /assets/images/headshot-chris.png
+image_alt: "Headshot of Chris Staikos"
+image_width: 1360
+image_height: 1742
 ---
 
 <section class="hero hero-alt">
@@ -14,7 +22,10 @@ seo_title: "About Chris Staikos | Registered Psychotherapist (Qualifying)"
     <p>After a decade writing software in the corporate world, I’ve turned my professional self towards healing and human connection. I’m a lifelong hobbyist musician, knowing musical communities as diverse as electronic and rave culture and classical music. I believe that change is rooted in the present moment of emotions in the body. Whether your needs are about parenting, professional vocation, or creative expression, I’ve come to understand that life’s biggest blessings can come with their greatest challenges.</p>
   </div>
   <div class="hero-image-wrap">
-    <img class="hero-image" src="{{ '/assets/images/headshot-chris.png' | relative_url }}" alt="Headshot of Chris Staikos" />
+    <picture>
+      <source type="image/webp" srcset="{{ '/assets/images/headshot-chris-420.webp' | relative_url }} 420w, {{ '/assets/images/headshot-chris-840.webp' | relative_url }} 840w" sizes="(max-width: 820px) 100vw, 420px" />
+      <img class="hero-image" src="{{ '/assets/images/headshot-chris.png' | relative_url }}" width="1360" height="1742" alt="Headshot of Chris Staikos" decoding="async" fetchpriority="high" />
+    </picture>
   </div>
 </section>
 

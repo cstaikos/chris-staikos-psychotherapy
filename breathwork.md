@@ -4,6 +4,15 @@ title: Breathwork
 permalink: /breathwork/
 description: "Conscious connected breathwork offered within therapy, including preparation, intention setting, and post-session integration."
 seo_title: "Breathwork | Conscious Connected Breathwork in Therapy"
+last_modified_at: 2026-04-24
+changefreq: monthly
+priority: 0.7
+schema_service_name: "Conscious connected breathwork in therapy"
+schema_service_type: "Breathwork integration"
+image: /assets/images/breathwork.png
+image_alt: "Abstract artwork representing breathwork and embodied processing"
+image_width: 1349
+image_height: 1166
 ---
 
 <section class="hero hero-alt">
@@ -14,6 +23,9 @@ seo_title: "Breathwork | Conscious Connected Breathwork in Therapy"
     <p>When offering breathwork to clients, it is held within the context of our therapeutic relationship. At least one therapy session is dedicated to intention setting and preparation, and one is geared towards integration after the breathwork session itself. I work together with clients to determine eligibility and readiness for this modality.</p>
   </div>
   <div class="hero-image-wrap">
-    <img class="hero-image breathwork-image" src="{{ '/assets/images/breathwork.png' | relative_url }}" alt="Abstract breathwork artwork" />
+    <picture>
+      <source type="image/webp" srcset="{{ '/assets/images/breathwork-460.webp' | relative_url }} 460w, {{ '/assets/images/breathwork-920.webp' | relative_url }} 920w" sizes="(max-width: 820px) 100vw, 460px" />
+      <img class="hero-image breathwork-image" src="{{ '/assets/images/breathwork.png' | relative_url }}" width="1349" height="1166" alt="Abstract artwork representing breathwork and embodied processing" decoding="async" fetchpriority="high" />
+    </picture>
   </div>
 </section>
