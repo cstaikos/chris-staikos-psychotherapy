@@ -21,15 +21,10 @@
         "width": {{ site.social_image_width | default: 1360 }},
         "height": {{ site.social_image_height | default: 1742 }}
       },
-      "areaServed": {
-        "@type": "AdministrativeArea",
-        "name": {{ site.service_area | jsonify }}
-      },
       "contactPoint": {
         "@type": "ContactPoint",
         "email": {{ site.email | jsonify }},
         "contactType": "client inquiries",
-        "areaServed": "CA-ON",
         "availableLanguage": "English"
       },
       "founder": {
@@ -41,8 +36,7 @@
           "itemOffered": {
             "@type": "Service",
             "name": "Individual psychotherapy",
-            "serviceType": "Psychotherapy",
-            "areaServed": {{ site.service_area | jsonify }}
+            "serviceType": "Psychotherapy"
           }
         },
         {
@@ -50,8 +44,7 @@
           "itemOffered": {
             "@type": "Service",
             "name": "Couples therapy",
-            "serviceType": "Psychotherapy",
-            "areaServed": {{ site.service_area | jsonify }}
+            "serviceType": "Psychotherapy"
           }
         },
         {
@@ -59,8 +52,7 @@
           "itemOffered": {
             "@type": "Service",
             "name": "Conscious connected breathwork",
-            "serviceType": "Breathwork integration",
-            "areaServed": {{ site.service_area | jsonify }}
+            "serviceType": "Breathwork"
           }
         }
       ],
@@ -165,11 +157,7 @@
       "provider": {
         "@id": "{{ site.url }}/#organization"
       },
-      "url": {{ canonical_url | jsonify }},
-      "areaServed": {
-        "@type": "AdministrativeArea",
-        "name": {{ site.service_area | jsonify }}
-      }
+      "url": {{ canonical_url | jsonify }}
     }{% endif %}
   ]
 }

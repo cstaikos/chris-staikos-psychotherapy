@@ -3,7 +3,7 @@ layout: default
 title: Psychotherapy
 permalink: /psychotherapy/
 description: "Online psychotherapy for individuals and couples with Chris Staikos, including fees, availability, consultations, and low-cost therapy options."
-seo_title: "Online Psychotherapy in Ontario | Individuals and Couples"
+seo_title: "Online Psychotherapy | Individuals and Couples"
 last_modified_at: 2026-04-24
 changefreq: monthly
 priority: 0.9
@@ -18,7 +18,7 @@ image_height: 1652
 <section class="hero hero-alt">
   <div class="hero-copy">
     <p class="eyebrow">Psychotherapy</p>
-    <h1>Online therapy for individuals and couples in Ontario</h1>
+    <h1>Online therapy for individuals and couples</h1>
     <p class="lead">I offer 60-minute remote psychotherapy sessions via Zoom, with free 20-minute consultations for new clients.</p>
   </div>
   <div class="hero-image-wrap">
