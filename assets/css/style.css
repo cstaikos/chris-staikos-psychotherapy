@@ -40,10 +40,7 @@ html {
 body {
   margin: 0;
   color: var(--text);
-  background:
-    radial-gradient(circle at top left, rgba(164, 189, 164, 0.35), transparent 32%),
-    radial-gradient(circle at 85% 18%, rgba(210, 177, 149, 0.2), transparent 24%),
-    linear-gradient(180deg, #f8f3eb 0%, #f1eadf 100%);
+  background: #f4efe7;
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.6;
 }
@@ -67,38 +64,31 @@ a {
   min-height: 100vh;
   position: relative;
   overflow: clip;
+  isolation: isolate;
 }
 
-.site-art {
-  position: absolute;
-  width: min(28rem, 38vw);
-  color: rgba(88, 112, 98, 0.28);
+.site-shell::before,
+.site-shell::after {
+  content: "";
+  position: fixed;
+  inset: 0;
   pointer-events: none;
   z-index: 0;
 }
 
-.site-art svg {
-  display: block;
-  width: 100%;
-  height: auto;
+.site-shell::before {
+  background-image: url("../images/bg1.png");
+  background-image: image-set(
+    url("../images/bg1.webp") type("image/webp"),
+    url("../images/bg1.png") type("image/png")
+  );
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.site-art path {
-  stroke: currentColor;
-  stroke-width: 1.6;
-  stroke-linecap: round;
-}
-
-.site-art-top {
-  top: 4.5rem;
-  right: -4rem;
-  transform: rotate(8deg);
-}
-
-.site-art-bottom {
-  bottom: 3rem;
-  left: -5rem;
-  transform: rotate(-10deg);
+.site-shell::after {
+  background: linear-gradient(180deg, rgba(248, 243, 235, 0.08), rgba(241, 234, 223, 0.28));
 }
 
 .site-header {
@@ -393,18 +383,7 @@ a {
     padding: 0.7rem 0.95rem;
   }
 
-  .site-art {
-    width: min(18rem, 52vw);
-    opacity: 0.85;
-  }
-
-  .site-art-top {
-    right: -3rem;
-    top: 6.5rem;
-  }
-
-  .site-art-bottom {
-    left: -4rem;
-    bottom: 5rem;
+  .site-shell::before {
+    background-position: 32% top;
   }
 }
