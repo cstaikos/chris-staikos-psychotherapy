@@ -2,9 +2,9 @@
 layout: default
 title: Psychotherapy
 permalink: /psychotherapy/
-description: "Online psychotherapy for individuals and couples with Chris Staikos, including fees, availability, consultations, and low-cost therapy options."
+description: "Online psychotherapy for individuals and couples with Chris Staikos, including fees, availability, consultations, and reduced-fee therapy options."
 seo_title: "Online Psychotherapy | Individuals and Couples"
-last_modified_at: 2026-04-24
+last_modified_at: 2026-04-30
 changefreq: monthly
 priority: 0.9
 schema_service_name: "Online psychotherapy for individuals and couples"
@@ -32,16 +32,19 @@ image_height: 1652
 <section class="section-grid section-grid-two">
   <article class="card">
     <h2>Sessions and Fees</h2>
-    <p>I work with both individuals and couples, and offer 60-minute sessions remotely via Zoom. My regular fee is $150 for individuals and $170 for couples. I have limited sliding scale spots available, with the aim of making therapy more accessible.</p>
+    <p>I work with both individuals and couples, and offer 60-minute sessions remotely via Zoom. My regular fee is $150 for individuals and $170 for couples. I also hold limited reduced-fee options, including sliding scale and short-term low-cost therapy spots when available.</p>
   </article>
   <article class="card">
     <h2>Availability</h2>
     <p>My available hours are 9:30am to 4:00pm Monday to Friday. I offer free 20-minute consultations as a way to get to know each other and determine whether it is a good fit.</p>
   </article>
-  <article class="card">
-    <h2>Low-Cost Therapy</h2>
-    <p>Low-cost therapy is offered as a means of making psychotherapy more accessible. I offer low-cost therapy at a significantly reduced fee ($65 for individuals and $85 for couples). In order to make low-cost therapy as accessible as possible, sessions at this rate are offered within a short-term model of 6 sessions. After the sixth session, there is an option to continue in a sliding scale spot (if available) or at the full fee. If these options are not feasible, our therapeutic relationship will come to a close after the sixth session.</p>
-  </article>
+</section>
+
+<section class="section-block">
+  <p class="section-label">Affordable Therapy</p>
+  <h2>Low-cost therapy options</h2>
+  <p>For clients seeking a more affordable way to begin therapy, I offer a limited number of low-cost spots at a significantly reduced fee. These sessions follow a short-term 6-session model so that reduced-fee care can remain available to more people.</p>
+  <a class="text-link" href="{{ '/low-cost-therapy/' | relative_url }}">Learn about low-cost therapy</a>
 </section>
 
   <div class="button-row">
