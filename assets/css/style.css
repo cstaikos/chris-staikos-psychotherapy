@@ -61,6 +61,8 @@ a {
 }
 
 .site-shell {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   position: relative;
   overflow: clip;
@@ -142,6 +144,7 @@ a {
 }
 
 .site-main {
+  flex: 1;
   padding: 3.5rem 0 5rem;
   position: relative;
   z-index: 1;
