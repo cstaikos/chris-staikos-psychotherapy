@@ -3,7 +3,6 @@ layout: default
 title: Contact
 permalink: /contact/
 description: "Contact Chris Staikos Psychotherapy to ask a question before booking psychotherapy or breathwork-informed care."
-seo_title: "Contact | Chris Staikos Psychotherapy"
 last_modified_at: 2026-04-24
 changefreq: yearly
 priority: 0.6

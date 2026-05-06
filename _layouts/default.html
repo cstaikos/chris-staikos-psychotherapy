@@ -3,12 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {% if page.seo_title %}
-      {% assign page_title = page.seo_title %}
-    {% elsif page.title == 'Home' %}
-      {% assign page_title = site.title %}
-    {% else %}
+    {% if page.title %}
       {% assign page_title = page.title | append: ' | ' | append: site.title %}
+    {% else %}
+      {% assign page_title = site.title %}
     {% endif %}
     {% assign page_description = page.description | default: site.description %}
     {% assign canonical_url = page.url | absolute_url %}

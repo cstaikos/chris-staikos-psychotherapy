@@ -3,7 +3,6 @@ layout: default
 title: Low-Cost Therapy
 permalink: /low-cost-therapy/
 description: "Affordable low-cost online therapy with Chris Staikos, including reduced fees for individuals and couples through a short-term 6-session model."
-seo_title: "Low-Cost Therapy | Affordable Online Therapy"
 last_modified_at: 2026-04-30
 changefreq: monthly
 priority: 0.8

@@ -3,7 +3,6 @@ layout: default
 title: Breathwork
 permalink: /breathwork/
 description: "Conscious connected breathwork offered within therapy, including preparation, intention setting, and post-session integration."
-seo_title: "Breathwork | Conscious Connected Breathwork in Therapy"
 last_modified_at: 2026-04-24
 changefreq: monthly
 priority: 0.7

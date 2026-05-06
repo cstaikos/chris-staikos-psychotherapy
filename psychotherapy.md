@@ -3,7 +3,6 @@ layout: default
 title: Psychotherapy
 permalink: /psychotherapy/
 description: "Online psychotherapy for individuals and couples with Chris Staikos, including fees, availability, consultations, and reduced-fee therapy options."
-seo_title: "Online Psychotherapy | Individuals and Couples"
 last_modified_at: 2026-04-30
 changefreq: monthly
 priority: 0.9
