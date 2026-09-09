@@ -1,0 +1,7 @@
+---
+layout: null
+sitemap: false
+---
+User-agent: *
+Allow: /
+{% assign origin_prefix = site.url | slice: 0, 8 %}{% if jekyll.environment == 'production' and origin_prefix == 'https://' and site.search_indexing == true %}Sitemap: {{ '/sitemap.xml' | absolute_url }}{% endif %}

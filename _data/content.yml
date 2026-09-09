@@ -22,9 +22,9 @@ breathwork:
   - This is typically done in the context of a therapeutic relationship, allowing us to collaboratively identify stuck emotional patterns, bring them into awareness via breathwork, and continue processing via integration work afterwards.
 breath_faq:
   - q: How do I know if breathwork is right for me?
-    a: 'The short answer is: let’s chat about it! There are some physiological and psychological readiness criteria, as well as some contraindications for participating in a breathwork session. I always facilitate breathwork sessions within a wider therapeutic relationship, working with each individual to determine if and when breathwork is appropriate for them.'
+    a: "The short answer is: let’s chat about it! There are some physiological and psychological readiness criteria, as well as some contraindications for participating in a breathwork session. I always facilitate breathwork sessions within a wider therapeutic relationship, working with each individual to determine if and when breathwork is appropriate for them."
   - q: Can I book a one-off breathwork session?
-    a: 'I offer breathwork in the context of an existing therapeutic relationship. At minimum, I would require: an initial consultation, one pre-breathwork preparation session, and one post-breathwork integration session. Depending on the individual, we may need to engage in more than one regular therapy session before moving into breathwork. This is in order to maximize benefits and minimize any risk of harm.'
+    a: "I offer breathwork in the context of an existing therapeutic relationship. At minimum, I would require: an initial consultation, one pre-breathwork preparation session, and one post-breathwork integration session. Depending on the individual, we may need to engage in more than one regular therapy session before moving into breathwork. This is in order to maximize benefits and minimize any risk of harm."
   - q: What are the risks involved in breathwork?
     a: Breathwork can bring uncomfortable emotions to the surface. Creating a safe container for this work is essential to ensure these emotions are tolerable. In addition to this, there are some contraindications for breathwork which you can read about in the resource below.
     link: https://unitybreathwork.com/breathwork-contraindications/
@@ -32,6 +32,18 @@ breath_faq:
   - q: How long does a breathwork session last?
     a: Three hours total. One hour involves preparation and discussion of intention, one hour is the actual breathwork, and one hour is dedicated to post-breathwork discussion. There are short breaks in between each section.
 faq:
+  - q: Are your sessions online or remote?
+    a: All of my client sessions, including breathwork, are held remotely via Zoom.
+  - q: Do you accept insurance?
+    a: As a Registered Psychotherapist (Qualifying), my services are eligible to be reimbursed by many health insurance providers. Some providers list a single provider type "psychologist" which includes psychotherapy. If you are unsure, reach out to your insurance provider!
+  - q: What are your fees?
+    a: My full fee is $150 for a 60-minute session.
+  - q: Do you offer sliding scale pricing?
+    a: Yes, I have limited sliding scale spots available to help make therapy more accessible.
+  - q: Do you offer free consultations?
+    a: Yes! I offer free 20-minute consultation to get to know each other and determine if we are a good fit.
+    link: https://aws-portal.owlpractice.ca/chris-staikos-psychotherapy/booking?therapist_id=1
+    label: Book a free consultation
   - q: What is breathwork?
     a: Conscious Connected Breathwork (CCB) is a specific form of breathing that can shift one’s state of consciousness. This can facilitate the processing of deep emotional material and help one to break out of old patterns.
     internal: breathwork

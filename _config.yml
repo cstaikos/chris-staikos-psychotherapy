@@ -12,3 +12,10 @@ defaults:
       path: ''
     values:
       layout: site
+
+# Set the final HTTPS url above and enable indexing at launch.
+# Development builds remain noindex even when this is true.
+search_indexing: false
+# Paste only the content value from each service's HTML verification tag.
+google_site_verification: ''
+bing_site_verification: ''

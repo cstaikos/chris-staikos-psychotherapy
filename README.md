@@ -46,9 +46,48 @@ python3 scripts/check_site.py tmp/baseurl /new-website
 
 These are build/source checks, not browser screenshot or interaction tests.
 
-## Publishing later
+## SEO and search-console setup
 
-Set `_config.yml` `url` to the final HTTPS origin and `baseurl` to the repository path (empty for a custom domain or user site). Confirm the draft content and replace or approve the nature photographs. Remove the preview `noindex, nofollow` tag from `_layouts/site.html` and add canonical URLs and a sitemap when the domain is known. The site has static HTML content, semantic headings and navigation, descriptive page metadata, and no custom Jekyll plugins. It remains local and unindexed during review.
+`_includes/seo.html` supplies page titles, descriptions, canonical URLs, robots directives, Google/Bing ownership verification tags, Open Graph/X text metadata, and JSON-LD for the website, pages and Chris. No address, reviews, or additional professional claims are invented. `sitemap.xml` includes all indexable pages using the site layout and updates when pages are added. `robots.txt` advertises it on production builds.
+
+Before publishing, set these fields in `_config.yml`:
+
+- `url`: final HTTPS origin, without a trailing slash (e.g. `https://example.org`).
+- `baseurl`: repository path such as `/new-website`, or empty for a custom domain/user site.
+- `search_indexing`: `true` when the public site is ready to be indexed.
+- `google_site_verification`: only the content value from Google's verification tag.
+- `bing_site_verification`: only the content value from Bing's `msvalidate.01` tag.
+
+Use `JEKYLL_ENV=production bundle exec jekyll build` for deployment. GitHub Pages sets the production environment for its native Jekyll build. Indexing requires all three: production environment, a configured HTTPS URL, and `search_indexing: true`. Local development stays noindex, omits public canonical/structured URLs, and produces an empty sitemap. Crawling stays allowed so search engines can read the noindex directive. Per-page `noindex: true` also removes that page from the sitemap; `sitemap: false` only excludes its sitemap entry.
+
+For Google, add a **URL-prefix property** matching the public site URL, select HTML tag verification, and paste the token into configuration. A **Domain property** uses DNS verification instead. For Bing, use its HTML meta tag method or import a verified Google Search Console site. Deploy the configured tokens before clicking Verify. Keep the tokens configured after verification. Then submit the public `sitemap.xml` URL to both services. On a GitHub project site, sitemap and canonical paths include the repository path; robots.txt is only authoritative at the host root, so submit the sitemap directly when you cannot control that root.
+
+No search-console account has been connected and no site has been submitted automatically. The tokens are public ownership-verification values, not passwords.
+
+Official setup references:
+
+- [Google ownership verification](https://support.google.com/webmasters/answer/9008080?hl=en)
+- [Bing site verification](https://www.bing.com/webmasters/help/add-and-verify-site-12184f8b)
+- [Google sitemap guidance](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap)
+
+### SEO validation
+
+Run the regular preview build/check above, then create `tmp/seo-production.yml` with a test HTTPS origin, base path, `search_indexing: true`, and test tokens:
+
+```yaml
+url: https://example.org
+baseurl: /practice
+search_indexing: true
+google_site_verification: test-google-token
+bing_site_verification: test-bing-token
+```
+
+```sh
+JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,tmp/seo-production.yml --destination tmp/seo-production
+python3 scripts/check_seo.py
+```
+
+Test configuration/output stays under excluded `tmp/` and is never part of the public site. The checks cover preview behaviour, production tags, JSON syntax, canonical/base paths, sitemap entries and robots.txt. Restart `jekyll serve` after editing configuration so it reloads the settings.
 
 ## Content and photography
 

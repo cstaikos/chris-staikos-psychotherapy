@@ -1,0 +1,16 @@
+---
+layout: null
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- assign origin_prefix = site.url | slice: 0, 8 -%}
+{%- if jekyll.environment == 'production' and origin_prefix == 'https://' and site.search_indexing == true -%}
+  {%- assign sorted_pages = site.pages | sort: 'url' -%}
+  {%- for entry in sorted_pages -%}
+    {%- if entry.layout == 'site' and entry.noindex != true and entry.sitemap != false %}
+  <url><loc>{{ entry.url | replace: 'index.html', '' | absolute_url | xml_escape }}</loc></url>
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif %}
+</urlset>

@@ -1,1 +1,17 @@
-<aside class="focus-note"><h3>Some of the things we might explore</h3><p>These are a few areas of focus, rather than the limits of what we can work on together.</p><ul>{% for item in c.focus %}<li>{{ item }}</li>{% endfor %}</ul><p>If you’re wondering whether we might be a good fit, <a href="{% include link.html to='contact' %}">get in touch</a>.</p></aside>
+<aside class="focus-note">
+    <h3>Focus Areas</h3>
+    <p>
+        These are a few areas of focus, rather than the limits of what we can
+        work on together.
+    </p>
+    <ul>
+        {% for item in c.focus %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+    <p>
+        If you’re wondering whether we might be a good fit,
+        <a href="{% include link.html to='contact' %}">get in touch</a> to book
+        a free consultation.
+    </p>
+</aside>
