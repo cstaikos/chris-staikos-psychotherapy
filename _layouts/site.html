@@ -62,18 +62,12 @@
                 >
                 <p>{{ c.credential }}</p>
             </div>
-            <div class="footer-links">
-                <a href="{% include link.html to='about' %}"
-                    >About & credentials</a
-                ><a href="{% include link.html to='psychedelic-support' %}"
-                    >Psychedelic support</a
-                ><a
-                    href="{{ c.profile }}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Psychology Today</a
-                >
-            </div>
+            <nav class="footer-links" aria-label="Footer navigation">
+                {% for item in site.data.navigation %}
+                <a href="{% include link.html to=item.to %}" {% if page.section == item.to %}aria-current="page"{% endif %}>{{ item.title }}</a>
+                {% endfor %}
+                <a href="{{ c.profile }}" target="_blank" rel="noopener noreferrer">Psychology Today</a>
+            </nav>
             <p class="footer-note">© {{ 'now' | date: '%Y' }} Chris Staikos</p>
         </footer>
     </body>
