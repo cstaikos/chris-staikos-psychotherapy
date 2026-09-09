@@ -15,7 +15,7 @@
         <script src="{{ '/assets/site.js' | relative_url }}" defer></script>
     </head>
     <body
-        class="theme-woodland {% if page.section %}inner-page{% else %}home-page{% endif %}"
+        class="theme-woodland {% if page.section %}inner-page page-{{ page.section }}{% else %}home-page{% endif %}"
     >
         <a class="skip-link" href="#main">Skip to content</a>
         <header class="site-header wrap">

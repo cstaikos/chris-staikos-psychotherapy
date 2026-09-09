@@ -17,3 +17,8 @@
 .site-footer{align-items:start;padding-block:32px;gap:24px}.footer-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px;align-items:start;font-size:.875rem}.footer-links a{display:flex;align-items:center;min-height:40px;line-height:1.45;padding-block:7px}.footer-links a:hover{text-decoration:underline}.footer-note{white-space:nowrap}@media(max-width:900px){.site-footer{flex-wrap:wrap}.footer-note{flex-basis:100%;text-align:left}}@media(max-width:650px){.site-footer{gap:18px;padding-block:28px}.footer-links{width:100%;max-width:420px;column-gap:20px}.footer-links a{min-height:44px}.footer-note{white-space:normal}}
 /* The ginkgo-path mark replaces the original text asterisk. */
 .brand .brand-symbol{display:block;width:52px;height:46px;flex:0 0 auto;object-fit:contain}.brand{gap:13px}@media(max-width:650px){.brand .brand-symbol{width:42px;height:38px}.brand{gap:10px}}
+/* Contact details use the light page surface and the shared footer. */
+.page-contact .contact-section{background:var(--paper);color:var(--ink);--line:#bdc5b1}
+.page-contact .contact-section .button{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.page-contact .contact-section .button:hover{background:#53614f;opacity:1}
+.page-contact .contact-details .contact-row{border-color:var(--line)}

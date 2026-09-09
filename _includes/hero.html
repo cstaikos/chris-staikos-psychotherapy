@@ -1,4 +1,23 @@
 <section class="hero wrap">
-<div class="hero-copy"><h1>Space for<br>something to shift.</h1><p class="hero-lead">{{ c.intro }}</p><div class="hero-actions"><a class="button" href="{% include link.html to='contact' %}">Get in touch</a><a class="text-link" href="{% include link.html to='about' %}">Meet Chris</a></div><p class="hero-credential">Chris Staikos<br>{{ c.credential }}</p></div>
-<figure class="hero-image"><img src="{{ '/assets/images/forest.jpg' | relative_url }}" alt="Soft light falling through a green forest" width="1800" height="1200" fetchpriority="high"></figure>
+    <div class="hero-copy">
+        <h1>Space for<br />something to shift.</h1>
+        <p class="hero-lead">{{ c.intro }}</p>
+        <div class="hero-actions">
+            <a class="button" href="{% include link.html to='contact' %}"
+                >Get in touch</a
+            ><a class="text-link" href="{% include link.html to='about' %}"
+                >Meet Chris</a
+            >
+        </div>
+        <p class="hero-credential">Chris Staikos<br />{{ c.credential }}</p>
+    </div>
+    <figure class="hero-image">
+        <img
+            src="{{ '/assets/images/forest.jpg' | relative_url }}"
+            alt="Soft light falling through a green forest"
+            width="1800"
+            height="1200"
+            fetchpriority="high"
+        />
+    </figure>
 </section>
