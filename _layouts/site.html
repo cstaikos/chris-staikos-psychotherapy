@@ -8,7 +8,7 @@
         <meta name="theme-color" content="#34483d" />
         <link
             rel="icon"
-            href="{{ '/assets/favicon.svg' | relative_url }}"
+            href="{{ '/assets/favicon.svg?v=ginkgo' | relative_url }}"
             type="image/svg+xml"
         />
         <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}" />
@@ -20,8 +20,7 @@
         <a class="skip-link" href="#main">Skip to content</a>
         <header class="site-header wrap">
             <a class="brand" href="{{ '/' | relative_url }}"
-                ><span class="brand-symbol" aria-hidden="true">✳</span
-                ><span>Chris Staikos<small>Psychotherapy</small></span></a
+                ><img class="brand-symbol" src="{{ '/assets/brand/ginkgo-path.svg' | relative_url }}" alt="" width="52" height="46" /><span>Chris Staikos<small>Psychotherapy</small></span></a
             >
             <button
                 class="menu-toggle"
