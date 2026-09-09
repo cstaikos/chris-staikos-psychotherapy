@@ -1,0 +1,46 @@
+name: Chris Staikos
+credential: Registered Psychotherapist (Qualifying)
+booking: https://aws-portal.owlpractice.ca/chris-staikos-psychotherapy/booking?therapist_id=1
+profile: https://www.psychologytoday.com/ca/therapists/chris-staikos-guelph-on/1713636
+intro: My approach is relational, trauma informed, and grounded in compassionate warmth.
+about:
+  - Hi, I’m Chris. I’ve come to psychotherapy after a decade writing software for companies of all sizes, from 4 to 25,000+ employees. I’ve come to see that real change in the world comes from the subtle internal shifts that drive behaviour — individually and collectively.
+  - We all have aspects of our lives that aren’t working for us. Some of these patterns are so old and unconscious, it’s easy to identify with them. I work with individuals to bring these patterns into focus, and to process the buried emotions that have held us in them. Releasing these emotions can offer the spaciousness required for establishing new patterns in life.
+  - My approach is relational, trauma informed, and grounded in compassionate warmth. I offer breathwork sessions for deeper processing, in an experiential model that is similar to psychedelic-assisted psychotherapy.
+focus: [Trauma processing, Anger, Life transitions, Chronic pain]
+credentials:
+  - Registered Psychotherapist (Qualifying) — College of Registered Psychotherapists of Ontario (CRPO)
+  - Member of the Ontario Society of Registered Psychotherapists (OSRP)
+  - MA Spiritual Care and Psychotherapy — Martin Luther University College / Wilfrid Laurier University (2026)
+  - BSc Cognitive Science — Queen’s University (2012)
+training:
+  - Triphasic Trauma Treatment Workshop — Redbird Therapy Centre (2026)
+  - Breathwork Facilitation Training — Outside the Box Education and Psychotherapy (2026)
+  - Fundamentals of Sitting for Psychedelic Assisted Psychotherapy & Breathwork — Outside the Box Education and Psychotherapy (2024)
+breathwork:
+  - I offer breathwork to clients where appropriate. This involves using a specific breathing technique to produce changes in consciousness, allowing emotional material to be more easily accessible and processed. The model is similar to that used in psychedelic assisted psychotherapy and involves curated music, eye shades, intention setting, and integration work.
+  - This is typically done in the context of a therapeutic relationship, allowing us to collaboratively identify stuck emotional patterns, bring them into awareness via breathwork, and continue processing via integration work afterwards.
+breath_faq:
+  - q: How do I know if breathwork is right for me?
+    a: 'The short answer is: let’s chat about it! There are some physiological and psychological readiness criteria, as well as some contraindications for participating in a breathwork session. I always facilitate breathwork sessions within a wider therapeutic relationship, working with each individual to determine if and when breathwork is appropriate for them.'
+  - q: Can I book a one-off breathwork session?
+    a: 'I offer breathwork in the context of an existing therapeutic relationship. At minimum, I would require: an initial consultation, one pre-breathwork preparation session, and one post-breathwork integration session. Depending on the individual, we may need to engage in more than one regular therapy session before moving into breathwork. This is in order to maximize benefits and minimize any risk of harm.'
+  - q: What are the risks involved in breathwork?
+    a: Breathwork can bring uncomfortable emotions to the surface. Creating a safe container for this work is essential to ensure these emotions are tolerable. In addition to this, there are some contraindications for breathwork which you can read about in the resource below.
+    link: https://unitybreathwork.com/breathwork-contraindications/
+    label: Read about breathwork contraindications
+  - q: How long does a breathwork session last?
+    a: Three hours total. One hour involves preparation and discussion of intention, one hour is the actual breathwork, and one hour is dedicated to post-breathwork discussion. There are short breaks in between each section.
+faq:
+  - q: What is breathwork?
+    a: Conscious Connected Breathwork (CCB) is a specific form of breathing that can shift one’s state of consciousness. This can facilitate the processing of deep emotional material and help one to break out of old patterns.
+    internal: breathwork
+    label: More about breathwork
+  - q: What are your hours?
+    a: My regular client hours are 9am to 4pm, Monday, Tuesday, Thursday, and Friday. You can view my availability by visiting my booking page.
+    link: https://aws-portal.owlpractice.ca/chris-staikos-psychotherapy/booking?therapist_id=1
+    label: View availability
+  - q: Do you offer psychedelic-assisted psychotherapy?
+    a: Not at this time. I do, however, work with those who have chosen to engage with psychedelics — in a recreational, therapeutic, and/or spiritual context — and are seeking support in processing these experiences.
+  - q: Can you refer me to an underground psychedelic therapist, or provide sources for psychedelic substances?
+    a: No, I am not able to provide either of these services.

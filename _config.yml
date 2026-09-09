@@ -1,0 +1,14 @@
+title: Chris Staikos Psychotherapy
+description: Relational, trauma-informed psychotherapy with Chris Staikos, Registered Psychotherapist (Qualifying), in Canada.
+lang: en-CA
+url: ''
+baseurl: ''
+markdown: kramdown
+permalink: pretty
+exclude: [README.md, Gemfile, Gemfile.lock, scripts, tmp, vendor]
+plugins: []
+defaults:
+  - scope:
+      path: ''
+    values:
+      layout: site
