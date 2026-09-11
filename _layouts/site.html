@@ -20,7 +20,7 @@
         <a class="skip-link" href="#main">Skip to content</a>
         <header class="site-header wrap">
             <a class="brand" href="{{ '/' | relative_url }}"
-                ><img class="brand-symbol" src="{{ '/assets/brand/ginkgo-quiet-path.svg' | relative_url }}" alt="" width="52" height="46" /><span>Chris Staikos<small>Psychotherapy</small></span></a
+                ><img class="brand-symbol" src="{{ '/assets/brand/ginkgo-quiet-path.svg' | relative_url }}" alt="" width="52" height="46" /><span class="brand-wordmark">Chris Staikos Psychotherapy</span></a
             >
             <button
                 class="menu-toggle"
@@ -42,11 +42,19 @@
             {% if page.section %}
             <div class="page-heading wrap">
                 <h1>{{ page.title }}</h1>
-                {% if page.lead %}
+                {% if page.section == 'psychotherapy' %}
+                <div class="prose therapy-introduction">
+                    {% if site.data.psychotherapy.approach and site.data.psychotherapy.approach != '' %}
+                        {{ site.data.psychotherapy.approach | markdownify }}
+                    {% else %}
+                        <p class="draft-copy">Description of my general approach to come.</p>
+                    {% endif %}
+                </div>
+                {% elsif page.lead %}
                 <p class="page-lead">{{ page.lead }}</p>
                 {% endif %}
             </div>
-            {% case page.section %} {% when 'about' %}{% include about.html
+            {% case page.section %} {% when 'psychotherapy' %}{% include psychotherapy.html %} {% when 'about' %}{% include about.html
             full=true %} {% when 'breathwork' %}{% include breathwork.html
             full=true %} {% when 'faq' %}{% include faq.html full=true %} {%
             when 'contact' %}{% include contact.html full=true %} {% when

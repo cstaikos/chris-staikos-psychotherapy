@@ -1,0 +1,8 @@
+# Fill these in when ready. Paragraphs and Markdown are supported.
+approach: 'We all carry a great deal of unprocessed emotion. This material can be quite old, having taken root in our bodies and psyches at a young age. My work is centred around bringing this material into the light of conscious awareness, fully experiencing the emotions and thereby releasing them. To paraphrase Stanislav Grof, "The full experience of an emotion is the funeral pyre of that emotion". My work is integrative and draws on parts work (Internal Family Systems), somatic approaches, mindfulness, psychedelic-assisted psychotherapy, and transpersonal psychology'
+# Keys match the focus-area names in content.yml, converted to lowercase hyphenated slugs.
+focus_descriptions:
+  trauma-processing: ""
+  anger: ""
+  life-transitions: ""
+  chronic-pain: ""

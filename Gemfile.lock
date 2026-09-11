@@ -36,6 +36,8 @@ GEM
       listen (~> 3.0)
     kramdown (2.4.0)
       rexml
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
     liquid (4.0.4)
     listen (3.10.0)
       logger
@@ -64,6 +66,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 3.10)
+  kramdown-parser-gfm (~> 1.1)
 
 CHECKSUMS
   addressable (2.9.0)
@@ -80,6 +83,7 @@ CHECKSUMS
   jekyll-sass-converter (1.5.2)
   jekyll-watch (2.2.1)
   kramdown (2.4.0)
+  kramdown-parser-gfm (1.1.0)
   liquid (4.0.4)
   listen (3.10.0)
   logger (1.7.0)

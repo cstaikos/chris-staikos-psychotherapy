@@ -4,9 +4,9 @@ booking: https://aws-portal.owlpractice.ca/chris-staikos-psychotherapy/booking?t
 profile: https://www.psychologytoday.com/ca/therapists/chris-staikos-guelph-on/1713636
 intro: Bringing softness to rigid patterns and richness to life.
 about:
-  - Hi, I’m Chris. I’ve come to psychotherapy after a decade writing software for companies of all sizes, from 4 to 25,000+ employees. I’ve come to see that real change in the world comes from the subtle internal shifts that drive behaviour — individually and collectively.
-  - We all have aspects of our lives that aren’t working for us. Some of these patterns are so old and unconscious, it’s easy to identify with them. I work with individuals to bring these patterns into focus, and to process the buried emotions that have held us in them. Releasing these emotions can offer the spaciousness required for establishing new patterns in life.
-  - My approach is relational, trauma informed, and grounded in compassionate warmth. I offer breathwork sessions for deeper processing, in an experiential model that is similar to psychedelic-assisted psychotherapy.
+  - Hi, I’m Chris. I live in Guelph, Ontario with my partner and our 4-year-old son. I am neurodivergent, queer, and drug- and sex-positive. I’ve come to psychotherapy after a decade writing software for companies of all sizes, from 4 to 25,000+ employees. I’ve come to see that real change in the world comes from the subtle internal shifts that drive behaviour — individually and collectively.
+  - We all have aspects of our lives that aren’t working for us. Some of these patterns are so deeply ingrained, it’s easy to identify with them. I work with individuals to bring these patterns into focus, and to process the buried emotions that have kept them in place. Releasing these emotions can offer the spaciousness required for establishing new patterns in life.
+  - My approach is relational, trauma informed, and grounded in present-moment awareness. I offer breathwork sessions for deeper processing, in an experiential model that is similar to psychedelic-assisted psychotherapy.
 focus: [Trauma processing, Anger, Life transitions, Chronic pain]
 credentials:
   - Registered Psychotherapist (Qualifying) — College of Registered Psychotherapists of Ontario (CRPO)
@@ -18,11 +18,13 @@ training:
   - Breathwork Facilitation Training — Outside the Box Education and Psychotherapy (2026)
   - Fundamentals of Sitting for Psychedelic Assisted Psychotherapy & Breathwork — Outside the Box Education and Psychotherapy (2024)
 breathwork:
-  - I offer breathwork to clients where appropriate. This involves using a specific breathing technique to produce changes in consciousness, allowing emotional material to be more easily accessible and processed. The model is similar to that used in psychedelic assisted psychotherapy and involves curated music, eye shades, intention setting, and integration work.
+  - I work collaboratively with clients to assess whether breathwork would be appropriate for them. Often called Conscious Connected Breathwork, this involves using a specific breathing technique to produce changes in consciousness, allowing emotional material to be more easily accessible and processed. The model is similar to that used in psychedelic assisted psychotherapy and involves curated music, eye shades, intention setting, and integration work.
   - This is typically done in the context of a therapeutic relationship, allowing us to collaboratively identify stuck emotional patterns, bring them into awareness via breathwork, and continue processing via integration work afterwards.
 breath_faq:
   - q: How do I know if breathwork is right for me?
     a: "The short answer is: let’s chat about it! There are some physiological and psychological readiness criteria, as well as some contraindications for participating in a breathwork session. I always facilitate breathwork sessions within a wider therapeutic relationship, working with each individual to determine if and when breathwork is appropriate for them."
+  - q: Do you offer holotropic breathwork?
+    a: No, the breathwork I offer is a gentle form of Conscious Connected Breathwork. This is shorter than holotropic breathwork tends to be, and with less of a focus on intensity.
   - q: Can I book a one-off breathwork session?
     a: "I offer breathwork in the context of an existing therapeutic relationship. At minimum, I would require: an initial consultation, one pre-breathwork preparation session, and one post-breathwork integration session. Depending on the individual, we may need to engage in more than one regular therapy session before moving into breathwork. This is in order to maximize benefits and minimize any risk of harm."
   - q: What are the risks involved in breathwork?
@@ -31,6 +33,8 @@ breath_faq:
     label: Read about breathwork contraindications
   - q: How long does a breathwork session last?
     a: Three hours total. One hour involves preparation and discussion of intention, one hour is the actual breathwork, and one hour is dedicated to post-breathwork discussion. There are short breaks in between each section.
+  - q: How much does a breathwork session cost?
+    a: Breathwork sessions last 3 hours, and are charged at the regular hourly rate. My full fee is $150 per hour, and I offer limited spots on sliding scale pricing ($100 - $140 per hour). Note that I typically require at least one psychotherapy session prior to breathwork focused on intention setting, and one after breathwork focused on integration work.
 faq:
   - q: Are your sessions online or remote?
     a: All of my client sessions, including breathwork, are held remotely via Zoom.
@@ -44,6 +48,8 @@ faq:
     a: Yes! I offer free 20-minute consultation to get to know each other and determine if we are a good fit.
     link: https://aws-portal.owlpractice.ca/chris-staikos-psychotherapy/booking?therapist_id=1
     label: Book a free consultation
+  - q: How often do you meet with your clients?
+    a: I meet with clients weekly or bi-weekly.
   - q: What is breathwork?
     a: Conscious Connected Breathwork (CCB) is a specific form of breathing that can shift one’s state of consciousness. This can facilitate the processing of deep emotional material and help one to break out of old patterns.
     internal: breathwork

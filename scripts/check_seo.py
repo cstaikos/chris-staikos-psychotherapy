@@ -47,6 +47,6 @@ for p in production.rglob('*.html'):
     assert 'Registered Psychotherapist (Qualifying)'==h.json[0]['@graph'][1]['jobTitle']
 sitemap=ET.parse(production/'sitemap.xml').getroot()
 listed={entry.find('{http://www.sitemaps.org/schemas/sitemap/0.9}loc').text for entry in sitemap}
-assert listed==urls and len(listed)==6,(listed,urls)
+assert listed==urls and len(listed)==7,(listed,urls)
 assert 'Sitemap: https://example.org/practice/sitemap.xml' in (production/'robots.txt').read_text()
-print('PASS: preview noindex; production verification tags, canonical URLs, JSON-LD, six-page sitemap and robots sitemap reference, including repository base path.')
+print('PASS: preview noindex; production verification tags, canonical URLs, JSON-LD, seven-page sitemap and robots sitemap reference, including repository base path.')

@@ -1,6 +1,6 @@
 # Chris Staikos Psychotherapy — Woodland
 
-The selected Woodland design, now a six-page Jekyll website. Original olive colours and serif typography, with stronger cream, pale olive and deep green sections. The supplied headshot appears on Home and About, with local nature photography elsewhere.
+The selected Woodland design, now a seven-page Jekyll website. Original olive colours and serif typography, with stronger cream, pale olive and deep green sections. The supplied headshot appears on Home and About, with local nature photography elsewhere.
 
 ## Local preview
 
@@ -10,7 +10,7 @@ bundle exec jekyll serve --host 127.0.0.1 --port 4000
 
 Open http://127.0.0.1:4000/. Keep the server running while reviewing. If dependencies are absent, run `bundle install` first.
 
-Pages: `/`, `/about/`, `/breathwork/`, `/psychedelic-support/`, `/faq/`, `/contact/`.
+Pages: `/`, `/about/`, `/psychotherapy/`, `/breathwork/`, `/psychedelic-support/`, `/faq/`, `/contact/`.
 
 The other nine prototypes and review gallery have been removed. Woodland now lives at the site root.
 
@@ -24,7 +24,7 @@ The other nine prototypes and review gallery have been removed. Woodland now liv
 - `assets/site.css`: Woodland design and responsive layouts.
 - `assets/site.js`: mobile menu and email reveal.
 
-The focus areas are a modest list on About and explicitly non-exhaustive. Extend the `focus` list in `_data/content.yml` as needed.
+The focus areas now have individual sections on Psychotherapy. About links there with “Learn more about my work.” Fill in `approach` and `focus_descriptions` in `_data/psychotherapy.yml`; blank entries show draft placeholders. Markdown and paragraphs are supported. Extend the `focus` list in `_data/content.yml` as needed, then add a matching lowercase hyphenated key under `focus_descriptions`.
 
 To add a page, create a directory with `index.html`, using the existing pages’ front matter as a starting point. Add its content include and matching case to `_layouts/site.html`, then add a navigation entry if appropriate. Assets and navigation use Jekyll’s `relative_url` filter for GitHub Pages project paths.
 
@@ -35,7 +35,7 @@ bundle exec jekyll build
 python3 scripts/check_site.py
 ```
 
-Checks six pages, internal routes, assets, anchors, single H1s, language, descriptions, preview noindex tags, essential draft content, and absence of private client notes and old prototype navigation. Update the expected page count when adding pages.
+Checks seven pages, internal routes, assets, anchors, single H1s, language, descriptions, preview noindex tags, essential draft content, and absence of private client notes and old prototype navigation. Update the expected page count when adding pages.
 
 GitHub Pages project-path check:
 
