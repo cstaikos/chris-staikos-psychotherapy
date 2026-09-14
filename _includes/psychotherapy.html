@@ -1,12 +1,5 @@
 {% assign therapy = site.data.psychotherapy %}
-<figure class="page-photo wrap therapy-photo">
-    <img
-        src="{{ '/assets/images/forest.jpg' | relative_url }}"
-        alt="Soft sunlight filtering through a quiet evergreen forest"
-        width="1800"
-        height="1200"
-    />
-</figure>
+
 <div class="therapy-content wrap">
     <div class="prose therapy-introduction">
         {{ therapy.approach | markdownify }}

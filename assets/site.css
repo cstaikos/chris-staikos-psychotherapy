@@ -39,11 +39,22 @@
 
 /* Psychotherapy: spacious sections using the service pages’ reading width. */
 .therapy-content{max-width:780px;padding-block:80px 105px}
-.therapy-photo+.therapy-content{padding-top:25px}
-.therapy-introduction{margin-bottom:70px}
 .therapy-content .prose{max-width:none}
 .therapy-content p:last-child{margin-bottom:0}
 .therapy-focus-area{padding-top:65px;border-top:1px solid var(--line)}
 .therapy-focus-area+.therapy-focus-area{margin-top:65px}
 .therapy-focus-area h2{font-size:clamp(2.3rem,3.5vw,3.3rem);line-height:1.18;margin-bottom:30px}
-@media(max-width:650px){.therapy-content{padding-block:45px 55px}.therapy-introduction{margin-bottom:45px}.therapy-focus-area{padding-top:40px}.therapy-focus-area+.therapy-focus-area{margin-top:40px}.therapy-focus-area h2{font-size:2.2rem;margin-bottom:24px}}
+@media(max-width:650px){.therapy-content{padding-block:45px 55px}.therapy-focus-area{padding-top:40px}.therapy-focus-area+.therapy-focus-area{margin-top:40px}.therapy-focus-area h2{font-size:2.2rem;margin-bottom:24px}}
+
+/* Shared photographic headings for the service pages. */
+.page-heading-photo{position:relative;isolation:isolate;overflow:hidden;background:#243c30;color:#f7f5ed;width:100%;min-height:340px;padding:40px max(6%,calc((100% - 1280px)/2));display:flex;flex-direction:column;justify-content:center}
+.page-heading-photo .heading-photo{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:center 50%}
+.page-heading-photo::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(20,40,29,.92),rgba(20,40,29,.78) 55%,rgba(20,40,29,.38))}
+.page-heading-photo .page-lead{max-width:600px;color:inherit;text-wrap:pretty}
+.page-psychotherapy .therapy-content,.inner-page .breathwork-section,.inner-page .support-section{padding-top:45px}
+.therapy-introduction{margin-bottom:55px}
+@media(max-width:650px){.page-heading-photo{min-height:230px;padding:28px 24px}.page-heading-photo::before{background:rgba(20,40,29,.82)}.page-psychotherapy .therapy-content,.inner-page .breathwork-section,.inner-page .support-section{padding-top:30px}.therapy-introduction{margin-bottom:40px}}
+@media print{.page-heading-photo{background:white;color:black}.page-heading-photo .heading-photo,.page-heading-photo::before{display:none}}
+
+/* Give the FAQ's close-up photo a wider-feeling crop without a taller banner. */
+@media(min-width:651px){.page-faq .heading-photo{left:20%;width:80%;mask-image:linear-gradient(to right,transparent,#000 25%);-webkit-mask-image:linear-gradient(to right,transparent,#000 25%)}}

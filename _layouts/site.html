@@ -40,7 +40,10 @@
         </header>
         <main id="main">
             {% if page.section %}
-            <div class="page-heading wrap">
+            <div class="page-heading wrap{% if page.heading_image %} page-heading-photo{% endif %}">
+                {% if page.heading_image %}
+                <img class="heading-photo" src="{{ page.heading_image | relative_url }}" alt="" width="1800" height="1200" fetchpriority="high" />
+                {% endif %}
                 <h1>{{ page.title }}</h1>
                 {% if page.lead %}
                 <p class="page-lead">{{ page.lead }}</p>

@@ -102,3 +102,8 @@ Placeholder nature photos:
 - Sunlit woodland: https://images.unsplash.com/photo-1441974231531-c6227db76b6e
 
 These illustrate atmosphere, not a promised practice location. Email reveal reduces casual scraping but is not a security boundary.
+
+Additional banner photography (Unsplash):
+
+- About: [Antje Winkler — sunlit forest path](https://unsplash.com/photos/a-shaded-forest-path-bathed-in-sunlight-8cH5aFnggnk), saved as `assets/images/woodland-path.jpg`.
+- FAQs: [Luke Ellis-Craven — green fern](https://unsplash.com/photos/green-fern-plant-G-S8UGXf_NE), saved as `assets/images/ferns.jpg`.
