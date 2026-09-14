@@ -37,9 +37,13 @@
 @media(max-width:650px){.site-header .brand{font-size:clamp(.85rem,3.4vw,1.25rem);gap:8px}.site-header .brand-symbol{width:32px;height:32px}.site-header{column-gap:10px}.js .menu-toggle{font-size:.75rem;padding:7px 9px;gap:6px}}
 @media(max-width:380px){.site-header{width:94%}.site-header .brand{gap:5px}.site-header .brand-symbol{width:27px;height:29px}.js .menu-toggle{padding:7px;gap:4px}}
 
-/* Psychotherapy: editable approach and a section for each focus area. */
-.therapy-approach,.therapy-focus-area{display:grid;grid-template-columns:.8fr 1.2fr;gap:10%;align-items:start}
-.therapy-focus{background:#e2e5d4}.therapy-focus-intro{max-width:700px;margin-bottom:40px}.therapy-focus-area{padding-block:32px;border-top:1px solid var(--line)}.therapy-focus-area:last-child{padding-bottom:0}.therapy-focus-area h3{font-size:1.8rem;margin-bottom:0}.therapy-focus-area p:last-child{margin-bottom:0}.draft-copy{color:var(--muted);font-style:italic}
-@media(max-width:650px){.therapy-approach,.therapy-focus-area{grid-template-columns:1fr;gap:18px}.therapy-focus-intro{margin-bottom:25px}.therapy-focus-area h3{font-size:1.6rem}}
-
-.page-psychotherapy .therapy-introduction{max-width:850px;margin-top:28px}.therapy-introduction p:last-child{margin-bottom:0}.page-psychotherapy .therapy-focus{background:var(--paper)}
+/* Psychotherapy: spacious sections using the service pages’ reading width. */
+.therapy-content{max-width:780px;padding-block:80px 105px}
+.therapy-photo+.therapy-content{padding-top:25px}
+.therapy-introduction{margin-bottom:70px}
+.therapy-content .prose{max-width:none}
+.therapy-content p:last-child{margin-bottom:0}
+.therapy-focus-area{padding-top:65px;border-top:1px solid var(--line)}
+.therapy-focus-area+.therapy-focus-area{margin-top:65px}
+.therapy-focus-area h2{font-size:clamp(2.3rem,3.5vw,3.3rem);line-height:1.18;margin-bottom:30px}
+@media(max-width:650px){.therapy-content{padding-block:45px 55px}.therapy-introduction{margin-bottom:45px}.therapy-focus-area{padding-top:40px}.therapy-focus-area+.therapy-focus-area{margin-top:40px}.therapy-focus-area h2{font-size:2.2rem;margin-bottom:24px}}

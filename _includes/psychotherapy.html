@@ -1,24 +1,24 @@
 {% assign therapy = site.data.psychotherapy %}
-<section class="therapy-focus section" aria-labelledby="focus-heading">
-    <div class="wrap">
-        <div class="therapy-focus-intro">
-            <h2 id="focus-heading">Areas of focus</h2>
-            <p>These are a few areas of focus, rather than the limits of what we can work on together.</p>
-        </div>
-        {% for area in c.focus %}
-            {% assign key = area | slugify %}
-            {% assign description = therapy.focus_descriptions[key] %}
-            <section class="therapy-focus-area" aria-labelledby="{{ key }}-heading">
-                <h3 id="{{ key }}-heading">{{ area }}</h3>
-                <div class="prose">
-                    {% if description and description != '' %}
-                        {{ description | markdownify }}
-                    {% else %}
-                        <p class="draft-copy">More about working with {{ area | downcase }} to come.</p>
-                    {% endif %}
-                </div>
-            </section>
-        {% endfor %}
+<figure class="page-photo wrap therapy-photo">
+    <img
+        src="{{ '/assets/images/forest.jpg' | relative_url }}"
+        alt="Soft sunlight filtering through a quiet evergreen forest"
+        width="1800"
+        height="1200"
+    />
+</figure>
+<div class="therapy-content wrap">
+    <div class="prose therapy-introduction">
+        {{ therapy.approach | markdownify }}
     </div>
-</section>
+    {% for area in therapy.focus %}
+        {% assign key = area.title | slugify %}
+        <section class="therapy-focus-area" aria-labelledby="{{ key }}-heading">
+            <h2 id="{{ key }}-heading">{{ area.title }}</h2>
+            <div class="prose">
+                {{ area.description | markdownify }}
+            </div>
+        </section>
+    {% endfor %}
+</div>
 {% include invitation.html %}

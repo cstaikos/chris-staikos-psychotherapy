@@ -24,7 +24,7 @@ The other nine prototypes and review gallery have been removed. Woodland now liv
 - `assets/site.css`: Woodland design and responsive layouts.
 - `assets/site.js`: mobile menu and email reveal.
 
-The focus areas now have individual sections on Psychotherapy. About links there with “Learn more about my work.” Fill in `approach` and `focus_descriptions` in `_data/psychotherapy.yml`; blank entries show draft placeholders. Markdown and paragraphs are supported. Extend the `focus` list in `_data/content.yml` as needed, then add a matching lowercase hyphenated key under `focus_descriptions`.
+Psychotherapy uses `_data/psychotherapy.yml` for its opening `approach` paragraph and ordered `focus` sections. Each section has a `title` and `description`; Markdown and paragraphs are supported. The opening paragraph sits in the page body, followed by spacious sections for each topic.
 
 To add a page, create a directory with `index.html`, using the existing pages’ front matter as a starting point. Add its content include and matching case to `_layouts/site.html`, then add a navigation entry if appropriate. Assets and navigation use Jekyll’s `relative_url` filter for GitHub Pages project paths.
 

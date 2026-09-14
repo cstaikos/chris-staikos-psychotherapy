@@ -42,15 +42,7 @@
             {% if page.section %}
             <div class="page-heading wrap">
                 <h1>{{ page.title }}</h1>
-                {% if page.section == 'psychotherapy' %}
-                <div class="prose therapy-introduction">
-                    {% if site.data.psychotherapy.approach and site.data.psychotherapy.approach != '' %}
-                        {{ site.data.psychotherapy.approach | markdownify }}
-                    {% else %}
-                        <p class="draft-copy">Description of my general approach to come.</p>
-                    {% endif %}
-                </div>
-                {% elsif page.lead %}
+                {% if page.lead %}
                 <p class="page-lead">{{ page.lead }}</p>
                 {% endif %}
             </div>

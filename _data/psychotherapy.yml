@@ -1,8 +1,19 @@
-# Fill these in when ready. Paragraphs and Markdown are supported.
-approach: 'We all carry a great deal of unprocessed emotion. This material can be quite old, having taken root in our bodies and psyches at a young age. My work is centred around bringing this material into the light of conscious awareness, fully experiencing the emotions and thereby releasing them. To paraphrase Stanislav Grof, "The full experience of an emotion is the funeral pyre of that emotion". My work is integrative and draws on parts work (Internal Family Systems), somatic approaches, mindfulness, psychedelic-assisted psychotherapy, and transpersonal psychology'
-# Keys match the focus-area names in content.yml, converted to lowercase hyphenated slugs.
-focus_descriptions:
-  trauma-processing: ""
-  anger: ""
-  life-transitions: ""
-  chronic-pain: ""
+# Paragraphs and Markdown are supported.
+approach: >-
+  We all carry a great deal of unprocessed emotion. This material can be quite old, having taken root in our bodies and psyches at a young age. My work is centred around bringing this material into the light of conscious awareness, fully experiencing the emotions and thereby releasing them. To paraphrase Stanislav Grof, “The full experience of an emotion is the funeral pyre of that emotion”. My work draws on parts work (Internal Family Systems), somatic approaches, mindfulness, psychedelic-assisted psychotherapy, psychoeducation, and transpersonal psychology.
+focus:
+  - title: Trauma Processing
+    description: |-
+      Trauma occurs when an individual experiences something overwhelming and is unable to process it in the moment. It is an adaptive response to overwhelm and results in unprocessed experience being stored in the body. When this occurs as a result of a specific event such as experiencing or witnessing violence, it is often referred to as “big T trauma”. Trauma also occurs gradually over time - especially in children - when needs are unmet. This is referred to as “little t trauma”.
+
+      I am trained in the triphasic trauma treatment model. This involves first establishing resources and stability in one’s life. From this resourced place, we turn to the processing of traumatic events. This is a gradual process that is held in a safe container, allowing for old emotions to be experienced in a tolerable way - without being completely flooded and/or overwhelmed. This is complemented by integration work - translating emotional processing into tangible changes in one’s life.
+  - title: Anger
+    description: |-
+      Anger is a highly misunderstood emotion - especially in Western culture. With so many examples of unhealthy expressions of anger we learn to see it as a destructive force. The result is that we repress anger, turning it inwards and ultimately harming ourselves. I work with clients to renegotiate their relationship with anger, turning towards it with curiosity and treating it as an important signal to ourselves and those around us. Anger helps us to protect that which we care about and can be a generative, rather than destructive, emotion.
+  - title: Chronic Pain, Chronic Fatigue, Anxiety, and Depression
+    description: |-
+      While these conditions may seem unrelated, there is a growing body of evidence that suggests they may - in some cases - be neuroplastic. Neuroplastic symptoms are real symptoms that are generated from the brain rather than the body. These can include persistent pain, headaches or migraines, digestive issues, fatigue, tinnitus, and sleep or anxiety-related symptoms. Many people have experienced these symptoms for months or even years, including various medical tests and procedures - often with limited or no reduction in symptoms.
+
+      Grounded in the works of Dr. John Sarno, Dr. Howard Schubiner, and psychotherapist Nicole Sachs, I work with clients to explore the emotional roots of potentially neuroplastic symptoms. Changing one’s relationship to these symptoms can often result in their reduction or elimination.
+
+      Please note that I am not a medical professional, and cannot provide either medical advice or diagnosis. My work is not intended to replace the work of a licensed physician. Please consult your physician for any medical issues.
