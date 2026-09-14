@@ -1,7 +1,7 @@
 title: Chris Staikos Psychotherapy
 description: Relational, trauma-informed psychotherapy with Chris Staikos, Registered Psychotherapist (Qualifying), in Canada.
 lang: en-CA
-url: ''
+url: 'https://www.chrisstaikos.com'
 baseurl: ''
 markdown: kramdown
 permalink: pretty
@@ -13,9 +13,9 @@ defaults:
     values:
       layout: site
 
-# Set the final HTTPS url above and enable indexing at launch.
+# Set the final HTTPS url above for production indexing.
 # Development builds remain noindex even when this is true.
-search_indexing: false
+search_indexing: true
 # Paste only the content value from each service's HTML verification tag.
 google_site_verification: ''
 bing_site_verification: ''
