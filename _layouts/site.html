@@ -5,6 +5,9 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {% include seo.html %}
+        {% if jekyll.environment == 'production' %}
+        <script defer src="https://cloud.umami.is/script.js" data-website-id="710c89a6-45d1-4285-8bc1-20419242d57d"></script>
+        {% endif %}
         <meta name="theme-color" content="#34483d" />
         <link
             rel="icon"

@@ -89,7 +89,12 @@ python3 scripts/check_seo.py
 
 Test configuration/output stays under excluded `tmp/` and is never part of the public site. The checks cover preview behaviour, production tags, JSON syntax, canonical/base paths, sitemap entries and robots.txt. Restart `jekyll serve` after editing configuration so it reloads the settings.
 
+## Analytics
+
+The shared layout includes the Umami tracking tag only when `JEKYLL_ENV=production`. Normal `bundle exec jekyll serve` previews omit it, so local development traffic is not counted. Deploy with `JEKYLL_ENV=production bundle exec jekyll build`; do not use the production environment for local previews. A locally served copy of a production build will still contain the tag.
+
 ## Content and photography
+
 
 The supplied PDF is the content source. Private ideal-client notes are excluded. The qualifying credential, breathwork readiness and integration details, actual booking link, and email-reveal behaviour are retained. No fees, office address, consultation duration, or clinical outcomes were invented. Psychedelic support uses the existing FAQ; the draft's passing legal statement about the Special Access Program remains omitted pending verification.
 

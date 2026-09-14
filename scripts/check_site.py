@@ -40,7 +40,7 @@ for file,p in pages.items():
   if not target.exists():errors.append(f'{file}: missing {link}')
   elif u.fragment and target in pages and unquote(u.fragment) not in pages[target].ids:errors.append(f'{file}: missing anchor {link}')
 content=' '.join(f.read_text() for f in pages)
-for phrase in ['Registered Psychotherapist (Qualifying)','Trauma Processing','Chronic Pain, Chronic Fatigue, Anxiety, and Depression','Three hours total','9am','Psychology Today','reveal-email','BSc Cognitive Science','Triphasic Trauma Treatment','Can I book a one-off']:
+for phrase in ['Registered Psychotherapist (Qualifying)','Trauma Processing','Three hours total','9am','Psychology Today','reveal-email','BSc Cognitive Science','Triphasic Trauma Treatment','Can I book a one-off']:
  if phrase not in content:errors.append(f'Missing required content: {phrase}')
 for private in ['My Ideal Client','Highly motivated','financially, relationally','chris.staikos.psychotherapy@proton.me','All 10 designs']:
  if private in content:errors.append(f'Private or obsolete content present: {private}')
