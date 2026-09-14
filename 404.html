@@ -1,0 +1,22 @@
+---
+layout: null
+permalink: /404.html
+sitemap: false
+noindex: true
+---
+<!doctype html>
+<html lang="en-CA">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Returning home | {{ site.title | escape }}</title>
+        <meta name="description" content="Return to Chris Staikos Psychotherapy." />
+        <meta name="robots" content="noindex, follow" />
+        <meta http-equiv="refresh" content="0; url={{ '/' | relative_url | escape }}" />
+        <script>window.location.replace({{ '/' | relative_url | jsonify }});</script>
+    </head>
+    <body>
+        <h1>Returning to the homepage</h1>
+        <p><a href="{{ '/' | relative_url }}">Continue to Chris Staikos Psychotherapy</a></p>
+    </body>
+</html>

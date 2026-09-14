@@ -33,6 +33,11 @@ assert len(ET.parse(preview/'sitemap.xml').getroot())==0
 assert 'Sitemap:' not in (preview/'robots.txt').read_text()
 urls=set()
 for p in production.rglob('*.html'):
+    if p.name == '404.html':
+        h=Head(p.read_text())
+        assert 'noindex' in h.meta['robots']
+        assert not h.canonical and not h.json
+        continue
     h=Head(p.read_text());relative=p.relative_to(production).as_posix().removesuffix('index.html')
     canonical='https://example.org/practice/'+relative;urls.add(canonical)
     assert h.canonical==[canonical], (p,h.canonical)

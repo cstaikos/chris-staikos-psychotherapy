@@ -44,7 +44,7 @@ for phrase in ['Registered Psychotherapist (Qualifying)','Trauma Processing','Th
  if phrase not in content:errors.append(f'Missing required content: {phrase}')
 for private in ['My Ideal Client','Highly motivated','financially, relationally','chris.staikos.psychotherapy@proton.me','All 10 designs']:
  if private in content:errors.append(f'Private or obsolete content present: {private}')
-if len(pages)!=7:errors.append(f'Expected 7 pages, found {len(pages)}')
+if len(pages)!=8:errors.append(f'Expected 8 pages including the 404 fallback, found {len(pages)}')
 if errors:
  print('\n'.join(errors));sys.exit(1)
 print(f'PASS: {len(pages)} pages; all internal links, anchors and assets resolve; one H1, description, en-CA and noindex on every page; required content present; only the selected multipage site remains.')
