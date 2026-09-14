@@ -8,8 +8,12 @@ sitemap: false
 {%- if jekyll.environment == 'production' and origin_prefix == 'https://' and site.search_indexing == true -%}
   {%- assign sorted_pages = site.pages | sort: 'url' -%}
   {%- for entry in sorted_pages -%}
+    {%- assign url_ending = entry.url | slice: -1, 1 -%}
+    {%- assign url_extension = entry.url | split: '.' | last -%}
+    {%- if url_ending == '/' or url_extension == 'html' -%}
     {%- if entry.layout == 'site' and entry.noindex != true and entry.sitemap != false %}
   <url><loc>{{ entry.url | replace: 'index.html', '' | absolute_url | xml_escape }}</loc></url>
+    {%- endif -%}
     {%- endif -%}
   {%- endfor -%}
 {%- endif %}
