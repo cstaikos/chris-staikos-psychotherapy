@@ -12,7 +12,7 @@ Open http://127.0.0.1:4000/. Keep the server running while reviewing. If depende
 
 Pages: `/`, `/about/`, `/psychotherapy/`, `/breathwork/`, `/psychedelic-support/`, `/faq/`, `/contact/`.
 
-`404.html` sends visitors from missing GitHub Pages URLs to the homepage, with a clickable fallback. It stays out of the sitemap and analytics. GitHub Pages still returns HTTP 404 for the original missing URL; the browser then navigates home.
+`404.html` displays a page-not-found message with a “Go to home” button, without automatically redirecting. It stays out of the sitemap and analytics. GitHub Pages returns HTTP 404 for the original missing URL.
 
 The other nine prototypes and review gallery have been removed. Woodland now lives at the site root.
 
