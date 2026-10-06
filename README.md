@@ -23,6 +23,7 @@ The other nine prototypes and review gallery have been removed. Woodland now liv
 - `_layouts/site.html`: common page shell.
 - `_includes/home.html`: home page introduction and onward links.
 - `_includes/`: content sections for each page.
+- Page front matter: `title` is the visible H1; `seo_title` overrides the full browser/social title without adding a suffix; `description` supplies the search/social description.
 - `assets/site.css`: Woodland design and responsive layouts.
 - `assets/site.js`: mobile menu and email reveal.
 
@@ -87,6 +88,13 @@ bing_site_verification: test-bing-token
 ```sh
 JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,tmp/seo-production.yml --destination tmp/seo-production
 python3 scripts/check_seo.py
+```
+
+Also validate the configured public origin:
+
+```sh
+JEKYLL_ENV=production bundle exec jekyll build --destination tmp/seo-public
+python3 scripts/check_seo.py tmp/seo-public https://www.chrisstaikos.com
 ```
 
 Test configuration/output stays under excluded `tmp/` and is never part of the public site. The checks cover preview behaviour, production tags, JSON syntax, canonical/base paths, sitemap entries and robots.txt. Restart `jekyll serve` after editing configuration so it reloads the settings.
