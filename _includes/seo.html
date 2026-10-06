@@ -1,5 +1,6 @@
 {%- assign seo_title = page.title | append: ' | ' | append: site.title -%}
 {%- unless page.section -%}{%- assign seo_title = site.title -%}{%- endunless -%}
+{%- assign seo_title = page.seo_title | default: seo_title -%}
 {%- assign seo_description = page.description | default: site.description -%}
 {%- assign origin_prefix = site.url | slice: 0, 8 -%}
 {%- assign public_build = false -%}
@@ -32,6 +33,11 @@
 {% assign canonical_url = page.url | replace: 'index.html', '' | absolute_url %}
 <link rel="canonical" href="{{ canonical_url | escape }}">
 <meta property="og:url" content="{{ canonical_url | escape }}">
+{% assign social_image = '/assets/images/forest.jpg' | absolute_url %}
+<meta property="og:image" content="{{ social_image | escape }}">
+<meta property="og:image:alt" content="Soft light falling through a green forest">
+<meta name="twitter:image" content="{{ social_image | escape }}">
+<meta name="twitter:image:alt" content="Soft light falling through a green forest">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
