@@ -40,10 +40,21 @@ for file,p in pages.items():
   if not target.exists():errors.append(f'{file}: missing {link}')
   elif u.fragment and target in pages and unquote(u.fragment) not in pages[target].ids:errors.append(f'{file}: missing anchor {link}')
 content=' '.join(f.read_text() for f in pages)
-for phrase in ['Registered Psychotherapist (Qualifying)','Trauma Processing','Three hours total','9am','Psychology Today','reveal-email','BSc Cognitive Science','Triphasic Trauma Treatment','Can I book a one-off']:
+for phrase in ['Practice closed', 'The practice is closed.', 'Appointments and consultations are no longer available for new or existing clients.']:
  if phrase not in content:errors.append(f'Missing required content: {phrase}')
 for private in ['My Ideal Client','Highly motivated','financially, relationally','chris.staikos.psychotherapy@proton.me','All 10 designs']:
  if private in content:errors.append(f'Private or obsolete content present: {private}')
+for file in pages:
+    if file.name == '404.html':continue
+    rendered=file.read_text()
+    if 'The practice is closed.' not in rendered or 'closure-notice' not in rendered:
+        errors.append(f'{file}: missing closure message')
+    if '<title>Practice Closed | Chris Staikos Psychotherapy</title>' not in rendered:
+        errors.append(f'{file}: missing closure title')
+    for required in ['Barbara Brown, RP at Redbird Therapy', 'tel:+14169127087', 'mailto:info@redbirdtherapy.ca']:
+        if required not in rendered:errors.append(f'{file}: missing records contact: {required}')
+    for stale in ['/booking?', 'reveal-email', 'View availability', 'Book a free consultation']:
+        if stale in rendered:errors.append(f'{file}: stale booking/contact prompt: {stale}')
 if len(pages)!=8:errors.append(f'Expected 8 pages including the 404 page, found {len(pages)}')
 if errors:
  print('\n'.join(errors));sys.exit(1)
