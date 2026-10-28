@@ -58,3 +58,8 @@
 
 /* Give the FAQ's close-up photo a wider-feeling crop without a taller banner. */
 @media(min-width:651px){.page-faq .heading-photo{left:20%;width:80%;mask-image:linear-gradient(to right,transparent,#000 25%);-webkit-mask-image:linear-gradient(to right,transparent,#000 25%)}}
+
+/* Keep client availability prominent on every page and screen size. */
+.availability-notice{background:#293c31;color:#fff;border-bottom:5px solid #c9cdbf;padding-block:22px;text-align:center}
+.availability-notice strong{display:block;font-size:clamp(1.3rem,3vw,1.8rem);line-height:1.3}
+.availability-notice p{margin:8px 0 0;line-height:1.5}

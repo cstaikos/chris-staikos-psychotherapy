@@ -46,11 +46,9 @@ faq:
   - q: What are your fees?
     a: My full fee is $150 for a 60-minute session.
   - q: Do you offer sliding scale pricing?
-    a: Yes, I have limited sliding scale spots available to help make therapy more accessible.
+    a: I am not accepting new clients at this time, including for sliding scale spots.
   - q: Do you offer free consultations?
-    a: Yes! I offer a free 20-minute consultation to get to know each other and determine if we are a good fit.
-    link: https://aws-portal.owlpractice.ca/chris-staikos-psychotherapy/booking?therapist_id=1
-    label: Book a free consultation
+    a: I am not accepting new clients or booking initial consultations at this time.
   - q: How often do you meet with your clients?
     a: I meet with clients weekly or bi-weekly.
   - q: What is breathwork?
@@ -58,9 +56,7 @@ faq:
     internal: breathwork
     label: More about breathwork
   - q: What are your hours?
-    a: My regular client hours are 9am to 4pm, Monday, Tuesday, Thursday, and Friday. You can view my availability by visiting my booking page.
-    link: https://aws-portal.owlpractice.ca/chris-staikos-psychotherapy/booking?therapist_id=1
-    label: View availability
+    a: My regular client hours are 9am to 4pm, Monday, Tuesday, Thursday, and Friday. I am not accepting new clients at this time.
   - q: Do you offer psychedelic-assisted psychotherapy?
     a: Not at this time. I do, however, work with those who have chosen to engage with psychedelics — in a recreational, therapeutic, and/or spiritual context — and are seeking support in processing these experiences.
   - q: Can you refer me to an underground psychedelic therapist, or provide sources for psychedelic substances?
