@@ -11,11 +11,16 @@ focus: [Trauma processing, Anger, Life transitions, Chronic pain]
 credentials:
   - Registered Psychotherapist (Qualifying) — College of Registered Psychotherapists of Ontario (CRPO)
   - Member of the Ontario Society of Registered Psychotherapists (OSRP)
-  - MA Spiritual Care and Psychotherapy — Martin Luther University College / Wilfrid Laurier University (2026)
-  - BSc Cognitive Science — Queen’s University (2012)
+  - title: MA Spiritual Care and Psychotherapy — Martin Luther University College / Wilfrid Laurier University (2026)
+    awards:
+      - Practicum Award for Exceptional Clinical Work
+      - Delton J. Glebe Pastoral Care and Counselling Award
+  - BScH Cognitive Science — Queen’s University (2012)
 training:
+  - Psychedelic Cannabis Training — Outside the Box Education and Psychotherapy (2026)
   - Triphasic Trauma Treatment Workshop — Redbird Therapy Centre (2026)
   - Breathwork Facilitation Training — Outside the Box Education and Psychotherapy (2026)
+  - Applied Suicide Intervention Skills Training (ASIST) (2025)
   - Integration Circle Workshop - Outside the Box Education and Psychotherapy (2025)
   - Fundamentals of Sitting for Psychedelic Assisted Psychotherapy & Breathwork — Outside the Box Education and Psychotherapy (2024)
 breathwork:
@@ -38,7 +43,7 @@ breath_faq:
     a: Breathwork sessions last 3 hours, and are charged at the regular hourly rate. My full fee is $150 per hour, and I offer limited spots on sliding scale pricing ($100 - $140 per hour). Note that I typically require at least one psychotherapy session prior to breathwork focused on intention setting, and one after breathwork focused on integration work.
 faq:
   - q: Are your sessions in-person or remote?
-    a: All of my client sessions, including breathwork, are held remotely via Zoom.
+    a: I offer in-person sessions on Thursdays at 161 Waterloo Avenue in Guelph. Remote sessions are available via Zoom.
   - q: Do you work with clients across Canada?
     a: Yes, I work with clients across Canada as well as other countries. I adhere to each country's regulations and requirements for providing remote psychotherapy sessions.
   - q: Do you accept insurance?
@@ -58,7 +63,7 @@ faq:
     internal: breathwork
     label: More about breathwork
   - q: What are your hours?
-    a: My regular client hours are 9am to 4pm, Monday, Tuesday, Thursday, and Friday. You can view my availability by visiting my booking page.
+    a: My online client hours are 9am to 4:30pm on Monday, Tuesday, Thursday, and Friday. My in-person client hours are 9am to 4:30pm on Thursday. You can view my availability by visiting my booking page.
     link: https://aws-portal.owlpractice.ca/chris-staikos-psychotherapy/booking?therapist_id=1
     label: View availability
   - q: Do you offer psychedelic-assisted psychotherapy?
