@@ -39,7 +39,7 @@
                    {% if page.section == item.to %}aria-current="page"{% endif %}
                    {% if item.to == 'contact' %}class="nav-contact"{% endif %}>{{ item.title }}</a>
                 {% endfor %}
-                <a href="{{ c.booking }}">Book now</a>
+                <a class="nav-book" href="{{ c.booking }}">Book now</a>
             </nav>
         </header>
         <main id="main">
