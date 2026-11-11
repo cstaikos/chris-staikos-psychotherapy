@@ -62,3 +62,5 @@
 .contact-map{display:block;width:100%;height:320px;border:0;border-radius:3px;margin-top:24px;background:var(--paper)}
 
 .contact-section .contact-booking .button{margin-top:0}.contact-map{margin-top:0}.contact-section .contact-row br{display:initial}
+
+.education-content .credential-awards{margin:8px 0 0;padding-left:22px;list-style:disc}.education-content .credential-awards li{padding:4px 0;border:0}
